@@ -1,0 +1,7 @@
+# User roles
+
+| #   | Role Name      | Role Description                                                                                                                                                                                                                                                                 |
+| --- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Anonymous User | Any individual who has the opportunity to use the system's open information, such as a list of blood donation centers, news, and reference information.                                                                                                                          |
+| 2   | Admin          | The administrator has full access rights to any information in the system and has the ability/integration to operate on the data. This role is responsible for the technical management of the application, ensuring security, software updates, and resolving technical issues. |
+| 3   | RC User        | Red-cross (RC) user. Performs content management tasks (news, promotions). It has the ability to obtain statistics on the use of the system by users.                                                                                                                            |
