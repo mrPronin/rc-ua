@@ -6,6 +6,11 @@ Red-Cross blood donation platform for Ukraine
 
 TODO
 
+## ARCHITECTURE
+
+![RC-UI-ARCHITECTURE](docs/rc-ua-architecture.drawio.svg)
+
+
 ## ASSUMPTIONS
 
 - Repository. We will use the monorepo approach to organize the code base.
