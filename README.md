@@ -4,7 +4,7 @@ Red-Cross blood donation platform for Ukraine
 
 ## ABOUT PROJECT
 
-<TODO>
+TODO
 
 ## ASSUMPTIONS
 
@@ -20,4 +20,4 @@ Red-Cross blood donation platform for Ukraine
 
 ## QUESTIONS
 
-<TODO>
+TODO
