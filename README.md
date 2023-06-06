@@ -27,9 +27,14 @@ TODO
 ## TODO
 
 - [x] Define platform architecture
-- [ ] Describe team
+- [x] Describe team
 - [ ] Describe techstack
-- [ ] Define project scope
+  - [ ] Back-end | API Server
+  - [ ] Front-end | User web-app
+  - [ ] Font-end | Strapi web-app
+  - [ ] CMS
+  - [ ] DevOps | Platform, hosting, CI&CD
+- [ ] Define project scope and user stories
 - [ ] Provide raw estimation
 
 ## QUESTIONS
