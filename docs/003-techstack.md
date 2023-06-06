@@ -9,7 +9,7 @@
 
 ## Back-end | CMS
 
-- content management system: [Strapi](https://docs.strapi.io)
+- content management system: [Strapi](https://strapi.io/), self-hosted for development and staging
 
 ## Back-end | Persistence
 
