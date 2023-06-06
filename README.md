@@ -27,6 +27,7 @@ TODO
 ## DOCUMENTATION
 
 - [PROJECT SCOPE AND USER STORIES](docs/001-project-scope-user-stories.md)
+- [USER ROLES](docs/002-user-roles.md)
 
 ## TODO
 
