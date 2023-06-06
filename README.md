@@ -10,7 +10,7 @@ TODO
 
 ![RC-UI-ARCHITECTURE](docs/rc-ua-architecture.drawio.svg)
 
-<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?repo=drawio-github&path=docs/rc-ua-architecture.drawio.svg" target="_blank">Edit</a> | <a href="https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjgraph%2Fdrawio-github%2Fmaster%2Fdocs/rc-ua-architecture.drawio.svg" target="_blank">Edit As New</a> | <a href="https://app.diagrams.net/#Hjgraph%2Fdrawio-github%2Fmaster%2Fdocs/rc-ua-architecture.drawio.svg" target="_blank">Edit with draw.io</a>
+<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?repo=rc-ua&path=docs/rc-ua-architecture.drawio.svg" target="_blank">Edit</a> | <a href="https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjgraph%2Frc-ua%2Fmaster%2Fdocs/rc-ua-architecture.drawio.svg" target="_blank">Edit As New</a> | <a href="https://app.diagrams.net/#Hjgraph%2Frc-ua%2Fmaster%2Fdocs/rc-ua-architecture.drawio.svg" target="_blank">Edit with draw.io</a>
 
 ## ASSUMPTIONS
 
