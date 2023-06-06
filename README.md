@@ -10,7 +10,6 @@ TODO
 
 ![RC-UI-ARCHITECTURE](docs/rc-ua-architecture.drawio.svg)
 
-
 ## ASSUMPTIONS
 
 - Repository. We will use the monorepo approach to organize the code base.
@@ -24,6 +23,14 @@ TODO
 - Front-end. We will use React as a framework to build user web-interface.
 - Front-end. We will use TypeScript as the programming language.
 - DevOps. We will use [CapRover](https://caprover.com) to deploy and manage platform.
+
+## TODO
+
+- [x] Define platform architecture
+- [ ] Describe team
+- [ ] Describe techstack
+- [ ] Define project scope
+- [ ] Provide raw estimation
 
 ## QUESTIONS
 
