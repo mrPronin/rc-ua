@@ -39,10 +39,11 @@ TODO
 - [x] Define platform architecture
 - [x] Describe team
 - [ ] Describe techstack
-  - [ ] Back-end | API Server
+  - [x] Back-end | API Server
+  - [x] Back-end | CMS
+  - [x] Back-end | Persistence
   - [ ] Front-end | User web-app
   - [ ] Font-end | Strapi web-app
-  - [ ] CMS
   - [ ] DevOps | Platform, hosting, CI&CD
 - [ ] Define project scope
 - [x] Define user stories
