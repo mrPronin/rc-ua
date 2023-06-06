@@ -18,7 +18,14 @@
 
 ## Front-end | User web-app
 
-TODO
+- programming language: [TypeScript](https://www.typescriptlang.org)
+- front-end library: [React](https://react.dev)
+- [styled-components](https://github.com/styled-components/styled-components)
+- [Material-UI](https://mui.com)
+- state management: [MobX](https://github.com/mobxjs/mobx)
+- form state management: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
+- internationalisation: [react-intl](https://github.com/formatjs/formatjs)
+- GraphQL client: [Apollo Client](https://www.apollographql.com/docs/react/)
 
 ## Font-end | Strapi web-app
 

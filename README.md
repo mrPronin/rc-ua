@@ -42,7 +42,7 @@ TODO
   - [x] Back-end | API Server
   - [x] Back-end | CMS
   - [x] Back-end | Persistence
-  - [ ] Front-end | User web-app
+  - [x] Front-end | User web-app
   - [ ] Font-end | Strapi web-app
   - [ ] DevOps | Platform, hosting, CI&CD
 - [ ] Define project scope
