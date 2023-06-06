@@ -29,6 +29,10 @@ TODO
 - [PROJECT SCOPE AND USER STORIES](docs/001-project-scope-user-stories.md)
 - [USER ROLES](docs/002-user-roles.md)
 
+## QUESTIONS
+
+TODO
+
 ## TODO
 
 - [x] Define platform architecture
@@ -40,8 +44,5 @@ TODO
   - [ ] CMS
   - [ ] DevOps | Platform, hosting, CI&CD
 - [ ] Define project scope and user stories
+- [x] Define user stories
 - [ ] Provide raw estimation
-
-## QUESTIONS
-
-TODO
