@@ -47,4 +47,4 @@ TODO
   - [ ] DevOps | Platform, hosting, CI&CD
 - [ ] Define project scope
 - [x] Define user stories
-- [ ] Provide raw estimation
+- [ ] Provide rough estimation
