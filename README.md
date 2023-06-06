@@ -24,6 +24,10 @@ TODO
 - Front-end. We will use TypeScript as the programming language.
 - DevOps. We will use [CapRover](https://caprover.com) to deploy and manage platform.
 
+## DOCUMENTATION
+
+- [PROJECT SCOPE AND USER STORIES](docs/project-scope-user-stories.md)
+
 ## TODO
 
 - [x] Define platform architecture
