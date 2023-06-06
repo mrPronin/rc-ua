@@ -43,6 +43,6 @@ TODO
   - [ ] Font-end | Strapi web-app
   - [ ] CMS
   - [ ] DevOps | Platform, hosting, CI&CD
-- [ ] Define project scope and user stories
+- [ ] Define project scope
 - [x] Define user stories
 - [ ] Provide raw estimation
