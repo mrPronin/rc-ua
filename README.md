@@ -29,6 +29,7 @@ TODO
 - [PROJECT SCOPE AND USER STORIES](docs/001-project-scope-user-stories.md)
 - [USER ROLES](docs/002-user-roles.md)
 - [TECH STACK](docs/003-techstack.md)
+- [ENVIRONMENT](docs/005-environment.md)
 - [LINKS](docs/004-links.md)
 
 ## QUESTIONS
@@ -39,14 +40,13 @@ TODO
 
 - [x] Define platform architecture
 - [x] Describe team
-- [ ] Describe techstack
+- [x] Describe techstack
   - [x] Back-end | API Server
-  - [x] Back-end | CMS
+  - [x] Back-end | CMS (backend, admin)
   - [x] Back-end | Persistence
   - [x] Front-end | User web-app
-  - [ ] Font-end | Strapi web-app
-  - [ ] DevOps | Platform, hosting, CI&CD
-- [ ] Define project scope for MVP (version 1.0)
+  - [x] DevOps | Platform, hosting, CI&CD
+- [x] Define project scope for MVP (version 1.0)
 - [x] Define user stories
 - [ ] Describe environments
-- [ ] Provide rough estimation
+- [ ] Provide raw estimation

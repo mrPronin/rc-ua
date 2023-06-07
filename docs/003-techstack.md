@@ -7,7 +7,7 @@
 - API interface: GraphQL with [Strawberry GraphQL](https://github.com/strawberry-graphql/strawberry)
 - etc
 
-## Back-end | CMS
+## Back-end | CMS (backend, admin)
 
 - content management system: [Strapi](https://strapi.io/), self-hosted for development and staging
 
@@ -26,10 +26,6 @@
 - form state management: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
 - internationalisation: [react-intl](https://github.com/formatjs/formatjs)
 - GraphQL client: [Apollo Client](https://www.apollographql.com/docs/react/)
-
-## Font-end | Strapi web-app
-
-TODO
 
 ## DevOps | Platform, hosting, CI&CD
 
