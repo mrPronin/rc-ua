@@ -2,7 +2,12 @@
 
 ## Project scope
 
-TODO
+For MVP (version 1.0), the platform will have the following restrictions:
+
+- the end user can use the project without authorization;
+- the platform provides the ability to work with the list of blood donation centers;
+- the platform provides the ability to work with news;
+- the platform provides the ability to work with reference information.
 
 ## User stories
 
