@@ -51,5 +51,6 @@ TODO
 - [x] Define user stories
 - [x] Describe environments
 - [x] Define 'HOW TO RUN' section
+- [ ] Define 'ABOUT PROJECT' section
 - [ ] Create user web-app design in Figma
 - [ ] Provide rough estimation
