@@ -29,8 +29,9 @@ TODO
 - [PROJECT SCOPE AND USER STORIES](docs/001-project-scope-user-stories.md)
 - [USER ROLES](docs/002-user-roles.md)
 - [TECH STACK](docs/003-techstack.md)
-- [ENVIRONMENT](docs/005-environment.md)
 - [LINKS](docs/004-links.md)
+- [ENVIRONMENT](docs/005-environment.md)
+- [HOW TO RUN](docs/006-how-to-run.md)
 
 ## QUESTIONS
 
@@ -48,5 +49,7 @@ TODO
   - [x] DevOps | Platform, hosting, CI&CD
 - [x] Define project scope for MVP (version 1.0)
 - [x] Define user stories
-- [ ] Describe environments
-- [ ] Provide raw estimation
+- [x] Describe environments
+- [x] Define 'HOW TO RUN' section
+- [ ] Create user web-app design in Figma
+- [ ] Provide rough estimation

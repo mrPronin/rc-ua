@@ -10,4 +10,4 @@ For the staging environment, we will use the CapRover platform and netcup.de as 
 
 ## PRODUCTION
 
-For production, we plan to use one of the leading cloud providers: GCP, AWS, or Azure. The final decision must be agreed upon by the team and the project donor.
+For production, we plan to use one of the leading cloud providers: GCP, AWS or Azure. The final decision must be agreed upon by the team and the project donor.
