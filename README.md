@@ -54,3 +54,7 @@ TODO
 - [ ] Define 'ABOUT PROJECT' section
 - [ ] Create user web-app design in Figma
 - [ ] Provide rough estimation
+  - [ ] Front-end | User web-app
+  - [ ] Back-end | CMS (backend, admin)
+  - [ ] Back-end | API Server
+  - [ ] DevOps | Platform, hosting, CI&CD
