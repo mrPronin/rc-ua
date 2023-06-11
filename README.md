@@ -2,13 +2,9 @@
 
 Red-Cross blood donation platform for Ukraine
 
-## ABOUT PROJECT
-
-TODO
-
 ## ARCHITECTURE
 
-![RC-UI-ARCHITECTURE](docs/rc-ua-architecture.drawio.svg)
+![RC-UI-ARCHITECTURE](docs/diagram/rc-ua-architecture.drawio.svg)
 
 - **Admin user, Red cross user, Anonymous user** - please check [user roles](docs/002-user-roles.md) section for detailed description;
 - **CapRover platform** - platform to deploy and manage staging environment, please check [environment](docs/005-environment.md) section for detailed description;
@@ -39,29 +35,8 @@ TODO
 - [LINKS](docs/004-links.md)
 - [ENVIRONMENT](docs/005-environment.md)
 - [HOW TO RUN](docs/006-how-to-run.md)
+- [TODO](docs/007-todo.md)
 
 ## QUESTIONS
 
 TODO
-
-## TODO
-
-- [x] Define platform architecture
-- [x] Describe team
-- [x] Describe techstack
-  - [x] Back-end | API Server
-  - [x] Back-end | CMS (backend, admin)
-  - [x] Back-end | Persistence
-  - [x] Front-end | User web-app
-  - [x] DevOps | Platform, hosting, CI&CD
-- [x] Define project scope for MVP (version 1.0)
-- [x] Define user stories
-- [x] Describe environments
-- [x] Define 'HOW TO RUN' section
-- [ ] Define 'ABOUT PROJECT' section
-- [ ] Create user web-app design in Figma
-- [ ] Provide rough estimation
-  - [ ] Front-end | User web-app
-  - [ ] Back-end | CMS (backend, admin)
-  - [ ] Back-end | API Server
-  - [ ] DevOps | Platform, hosting, CI&CD
