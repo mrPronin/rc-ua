@@ -2,24 +2,25 @@
 
 ## PROJECT TODO
 
-- [x] Define platform architecture
-- [x] Describe team
-- [x] Describe techstack
-  - [x] Back-end | API Server
-  - [x] Back-end | CMS (backend, admin)
-  - [x] Back-end | Persistence
-  - [x] Front-end | User web-app
-  - [x] DevOps | Platform, hosting, CI&CD
-- [x] Define project scope for MVP (version 1.0)
-- [x] Define user stories
-- [x] Describe environments
-- [x] Define 'HOW TO RUN' section
-- [ ] Create user web-app design in Figma
-- [ ] Provide rough estimation
-  - [ ] Front-end | User web-app
-  - [ ] Back-end | CMS (backend, admin)
-  - [ ] Back-end | API Server
-  - [ ] DevOps | Platform, hosting, CI&CD
+- [x] define platform architecture
+- [x] describe team
+- [x] describe techstack
+  - [x] describe Back-end | API Server
+  - [x] describe Back-end | CMS (backend, admin)
+  - [x] describe back-end | Persistence
+  - [x] describe Front-end | User web-app
+  - [x] describe DevOps | Platform, hosting, CI&CD
+- [x] define project scope for MVP (version 1.0)
+- [x] define user stories
+- [x] describe environments
+- [x] define 'HOW TO RUN' section
+- [x] docs: update architecture diagramm, add description for components
+- [ ] design: create user web-app design in Figma
+- [ ] provide rough estimation
+  - [ ] provide estimation: Front-end | User web-app
+  - [ ] provide estimation: Back-end | CMS (backend, admin)
+  - [ ] provide estimation: Back-end | API Server
+  - [ ] provide estimation: DevOps | Platform, hosting, CI&CD
 
 ## TODO | API Server
 
