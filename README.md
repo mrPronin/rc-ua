@@ -23,7 +23,7 @@ Red-Cross blood donation platform for Ukraine
 - DB. We will use PostgreSQL as a database server.
 - Content management. We will use [Strapi](https://docs.strapi.io) for content management - an open-source, Node.js based, Headless CMS.
 - Front-end. We will use React as a framework to build user web-interface.
-- Front-end. We will use TypeScript as the programming language.
+- Front-end. We will use [TypeScript](https://www.typescriptlang.org) as the programming language.
 - DevOps. We will use [CapRover](https://caprover.com) to deploy and manage platform.
 
 ## DOCUMENTATION
