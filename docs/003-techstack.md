@@ -25,7 +25,7 @@
 - state management: [MobX](https://github.com/mobxjs/mobx)
 - form state management: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
 - internationalisation: [react-intl](https://github.com/formatjs/formatjs)
-- GraphQL client: [Apollo Client](https://www.apollographql.com/docs/react/)
+- [GraphQL](https://graphql.org/) client: [Apollo Client](https://www.apollographql.com/docs/react/)
 
 ## DevOps | Platform, hosting, CI&CD
 
