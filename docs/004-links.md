@@ -1,5 +1,23 @@
 # LINKS
 
+## GraphQL
+
+- [ ] Basics Tutorial - Introduction https://www.howtographql.com/basics/0-introduction/
+
+## Back-end | API Server
+
+- [ ] Flask | Flask https://flask.palletsprojects.com/en/2.3.x/
+- [ ] Flask | The Python micro framework for building web applications. https://github.com/pallets/flask
+- [ ] Flask | Using GraphQL with Python – A Complete Guide https://www.apollographql.com/blog/graphql/python/complete-api-guide/
+- [ ] PEP 3333 – Python Web Server Gateway Interface v1.0.1 https://peps.python.org/pep-3333/
+- [ ] Strawberry GraphQL | https://strawberry.rocks/
+- [ ] Strawberry GraphQL | A GraphQL library for Python that leverages type annotations https://github.com/strawberry-graphql/strawberry
+- [x] Strawberry GraphQL | Type hints https://strawberry.rocks/docs/concepts/typings
+- [ ] Strawberry GraphQL | Add Python to your GraphQL API with GraphOS and Strawberry GraphQL https://www.apollographql.com/blog/backend/federation/add-python-to-your-graphql-api-with-graphos-and-strawberry-graphql/
+- [ ] Strawberry GraphQL | Using GraphQL with Strawberry, FastAPI, and Next.js https://blog.logrocket.com/using-graphql-strawberry-fastapi-next-js/
+- [x] Strawberry GraphQL | Building GraphQL APIs with Strawberry (Part 1: Queries) https://jaydenwindle.com/writing/strawberry-graphql-part-1/
+- [ ] Strawberry GraphQL | Building GraphQL APIs with Strawberry (Part 2: Mutations) https://jaydenwindle.com/writing/strawberry-graphql-part-2/
+
 ## Front-end | User web-app
 
 - [ ] Introduction to Apollo Client https://www.apollographql.com/docs/react/
@@ -19,8 +37,10 @@
 - [x] Strapi | GraphQL plugin https://docs.strapi.io/dev-docs/plugins/graphql
 - [ ] Strapi | Announcing the Strapi starter CLI https://strapi.io/blog/announcing-the-strapi-starter-cli
 - [ ] Strapi | Command Line Interface (CLI) https://docs.strapi.io/dev-docs/cli
+- [ ] Strapi | Deploying Strapi to Your Own VPS https://strapi.io/blog/deploying-strapi-to-your-own-vps
+- [ ] Strapi | Environment configuration and variables https://docs.strapi.io/dev-docs/configurations/environment#strapi-s-environment-variables
+- [ ] Strapi | Internationalization (i18n) plugin https://docs.strapi.io/dev-docs/plugins/i18n
 
-## Back-end | Persistence
+## Other
 
-- [ ] Prisma with Python and FastAPI https://medium.com/dooboolab/prisma-with-python-and-fastapi-33bf25bb20c0
-- [ ] Prisma Client Python https://prisma-client-py.readthedocs.io/en/stable/
+- [ ] Install pipenv Windows https://www.pythontutorial.net/python-basics/install-pipenv-windows/
