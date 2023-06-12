@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  strapi-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: strapi-app
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_HOST: strapi-db
+    ports:
+      - "1337:1337"
+    networks:
+      - strapi-network
+    volumes:
+      - ./config:/app/config
+      - ./src:/app/src
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env:/app/.env
+      - ./public/uploads:/app/public/uploads
+
+  strapi-db:
+    image: postgres:15.3-alpine
+    container_name: strapi-db
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    ports:
+      - "5432:5432"
+    networks:
+      - strapi-network
+    volumes:
+      - strapi-data:/var/lib/postgresql/data/
+    command: ["postgres", "-c", "log_statement=all"]
+
+volumes:
+  strapi-data:
+
+networks:
+  strapi-network:
+    driver: bridge
