@@ -12,7 +12,8 @@ COPY ./strapi/package-lock.json ./
 # RUN npm config set fetch-retry-maxtimeout 600000 -g && npm install --only=production
 
 # RUN npm install --omit=de
-RUN npm install --unsafe-perm --global sharp && npm --unsafe-perm install --omit=dev
+# RUN npm install --unsafe-perm --global sharp && npm --unsafe-perm install --omit=dev
+RUN npm install sharp && npm install --omit=dev
 
 # RUN yarn --production --non-interactive
 ENV PATH /opt/node_modules/.bin:$PATH
