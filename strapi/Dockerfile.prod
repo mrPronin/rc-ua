@@ -5,7 +5,8 @@ ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /opt/
-COPY ./strapi/package.json ./strapi/package-lock.json ./
+COPY ./strapi/package.json ./
+# COPY ./strapi/package-lock.json ./
 COPY ./strapi/yarn.lock ./
 # RUN npm config set fetch-retry-maxtimeout 600000 -g && npm install --only=production
 RUN yarn --production --frozen-lockfile --non-interactive
