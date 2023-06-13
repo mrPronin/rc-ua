@@ -1,26 +1,27 @@
 # Creating multi-stage build for production
 FROM node:18-alpine as build
 RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev > /dev/null 2>&1
-RUN npm install --quiet node-gyp -g
+# RUN npm install --quiet node-gyp -g
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /opt/
 COPY ./strapi/package.json ./
-# COPY ./strapi/package-lock.json ./
-COPY ./strapi/yarn.lock ./
+COPY ./strapi/package-lock.json ./
+# COPY ./strapi/yarn.lock ./
 # RUN npm config set fetch-retry-maxtimeout 600000 -g && npm install --only=production
-RUN yarn --production --non-interactive
+RUN npm install --only=production
+# RUN yarn --production --non-interactive
 ENV PATH /opt/node_modules/.bin:$PATH
 WORKDIR /opt/app
 COPY ./strapi/ .
-# RUN npm run build
-RUN yarn build
+RUN npm run build
+# RUN yarn build
 
 # Creating final production image
 FROM node:18-alpine
 RUN apk add --no-cache vips-dev
-RUN npm install --quiet node-gyp -g
+# RUN npm install --quiet node-gyp -g
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 WORKDIR /opt/
@@ -31,5 +32,5 @@ COPY --from=build /opt/app ./
 RUN chown -R node:node /opt/app
 USER node
 EXPOSE 1337
-# CMD ["npm", "run", "start"]
-CMD [ "yarn", "start" ]
+CMD ["npm", "run", "start"]
+# CMD [ "yarn", "start" ]
