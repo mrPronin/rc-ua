@@ -1,8 +1,8 @@
 export default ({ env }) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
-  url: "https://rc-ua-strapi.captain.regionit.de",
-  proxy: true,
+  url: env("PUBLIC_URL", ""),
+  proxy: env.bool("IS_PROXIED", false),
   app: {
     keys: env.array("APP_KEYS"),
   },
