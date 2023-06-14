@@ -70,6 +70,12 @@
         }
       },
       "type": "richtext"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "blood_donation_centers"
     }
   }
 }
