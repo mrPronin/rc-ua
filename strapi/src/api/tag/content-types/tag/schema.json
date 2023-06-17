@@ -24,6 +24,18 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "news_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-item.news-item",
+      "mappedBy": "tags"
+    },
+    "blood_donation_centers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blood-donation-center.blood-donation-center",
+      "mappedBy": "tags"
     }
   }
 }
