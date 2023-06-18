@@ -25,14 +25,6 @@
       "type": "string",
       "required": true
     },
-    "address": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "category": {
       "pluginOptions": {
         "i18n": {
@@ -47,22 +39,6 @@
       "default": "Stationary",
       "required": true
     },
-    "workSchedule": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text"
-    },
-    "contactInformation": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "notes": {
       "pluginOptions": {
         "i18n": {
@@ -76,6 +52,36 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "blood_donation_centers"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "address.address"
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "contacts.contacts"
+    },
+    "workSchedule": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "schedule.work-schedule-item"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_contacts_contacts",
+  "info": {
+    "displayName": "Contacts",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "cellPhone": {
+      "type": "string"
+    },
+    "landlinePhone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

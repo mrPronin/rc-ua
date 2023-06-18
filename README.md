@@ -35,6 +35,7 @@ Red-Cross blood donation platform for Ukraine
 - [ENVIRONMENT](docs/005-environment.md)
 - [HOW TO RUN](docs/006-how-to-run.md)
 - [TODO](docs/007-todo.md)
+- [TIME-SHEET RULES](docs/008-time-sheet-rules.md)
 
 ## QUESTIONS
 
