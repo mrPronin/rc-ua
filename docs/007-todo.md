@@ -40,4 +40,4 @@
 - [x] cms: define 'BloodDonationCenter' collection
 - [x] cms: update 'User' collection, add admin_user, firstName, lastName, cellPhone, title, region, city
 - [x] cms: define 'NewsItem' collection
-- [ ] define initial content: 20 news items, 20 blood donation centers
+- [ ] cms: define initial content: 20 news items, 20 blood donation centers

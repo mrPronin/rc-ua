@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_schedule_work_schedule_items",
+  "info": {
+    "displayName": "WorkScheduleItem",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "WeekDay": {
+      "type": "enumeration",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Fridays",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "StartTimeBeforeLunchBreak": {
+      "type": "time"
+    },
+    "EndTimeBeforeLunchBreak": {
+      "type": "time"
+    },
+    "StartTimeAfterLunchBreak": {
+      "type": "time"
+    },
+    "EndTimeAfterLunchBreak": {
+      "type": "time"
+    }
+  }
+}

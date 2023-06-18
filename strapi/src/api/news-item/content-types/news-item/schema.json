@@ -4,7 +4,8 @@
   "info": {
     "singularName": "news-item",
     "pluralName": "news-items",
-    "displayName": "NewsItem"
+    "displayName": "NewsItem",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -53,6 +54,14 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "news_items"
+    },
+    "subtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
