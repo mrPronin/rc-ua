@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "WeekDay": {
+    "weekDay": {
       "type": "enumeration",
       "enum": [
         "Monday",
@@ -19,16 +19,16 @@
         "Sunday"
       ]
     },
-    "StartTimeBeforeLunchBreak": {
+    "startTimeBeforeLunchBreak": {
       "type": "time"
     },
-    "EndTimeBeforeLunchBreak": {
+    "endTimeBeforeLunchBreak": {
       "type": "time"
     },
-    "StartTimeAfterLunchBreak": {
+    "startTimeAfterLunchBreak": {
       "type": "time"
     },
-    "EndTimeAfterLunchBreak": {
+    "endTimeAfterLunchBreak": {
       "type": "time"
     }
   }
