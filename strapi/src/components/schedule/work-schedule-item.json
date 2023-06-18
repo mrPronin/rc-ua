@@ -17,7 +17,8 @@
         "Friday",
         "Saturday",
         "Sunday"
-      ]
+      ],
+      "required": true
     },
     "startTimeBeforeLunchBreak": {
       "type": "time"
