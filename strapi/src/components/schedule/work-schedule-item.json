@@ -2,7 +2,8 @@
   "collectionName": "components_schedule_work_schedule_items",
   "info": {
     "displayName": "WorkScheduleItem",
-    "icon": "calendar"
+    "icon": "calendar",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,7 +14,7 @@
         "Tuesday",
         "Wednesday",
         "Thursday",
-        "Fridays",
+        "Friday",
         "Saturday",
         "Sunday"
       ]
