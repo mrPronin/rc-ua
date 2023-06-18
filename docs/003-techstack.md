@@ -7,7 +7,7 @@
 - API interface: GraphQL with [Strawberry GraphQL](https://github.com/strawberry-graphql/strawberry)
 - etc
 
-## Back-end | CMS (backend, admin)
+## Back-end | CMS
 
 - content management system: [Strapi](https://strapi.io/), self-hosted for development and staging
 

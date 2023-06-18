@@ -6,7 +6,7 @@
 - [x] describe team
 - [x] describe techstack
   - [x] describe Back-end | API Server
-  - [x] describe Back-end | CMS (backend, admin)
+  - [x] describe Back-end | CMS
   - [x] describe back-end | Persistence
   - [x] describe Front-end | User web-app
   - [x] describe DevOps | Platform, hosting, CI&CD
@@ -17,7 +17,7 @@
 - [x] docs: update architecture diagramm, add description for components
 - [ ] provide rough estimation
   - [ ] provide estimation: Front-end | User web-app
-  - [ ] provide estimation: Back-end | CMS (backend, admin)
+  - [ ] provide estimation: Back-end | CMS
   - [ ] provide estimation: Back-end | API Server
   - [ ] provide estimation: DevOps | Platform, hosting, CI&CD
 
