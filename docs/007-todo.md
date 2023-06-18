@@ -33,7 +33,7 @@
 - [ ] deploy web-client to CapRover platform, create CI/CD pipline;
 - [ ] design: create user web-app design in Figma
 
-## Back-end | CMS (backend, admin)
+## Back-end | CMS
 
 - [x] cms: create Dockerfile and Dockerfile.prod, deploy strapi to our CapRover platform, invite users
 - [x] cms: define 'Tag' collection, provide demo content
@@ -41,3 +41,4 @@
 - [x] cms: update 'User' collection, add admin_user, firstName, lastName, cellPhone, title, region, city
 - [x] cms: define 'NewsItem' collection
 - [ ] cms: define initial content: 20 news items, 20 blood donation centers
+- [ ] cms: localization setup (en, ua)
