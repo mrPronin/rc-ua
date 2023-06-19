@@ -14,7 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import { appRoutesMap } from './../../routes/appRotesMap';
+import { appRoutesMap } from 'routes/appRotesMap';
 import { useLocation } from 'react-router-dom';
 
 interface IMainLayout {
