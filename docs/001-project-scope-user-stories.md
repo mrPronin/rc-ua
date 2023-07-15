@@ -45,3 +45,5 @@ TODO
 ### EPIC 6. User privacy
 TODO: geolocation enablement
 
+### EPIC 7. Blood donation appointment
+TODO: just draft enabled by feature flag
