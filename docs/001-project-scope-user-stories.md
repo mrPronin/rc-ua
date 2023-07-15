@@ -38,3 +38,10 @@ For MVP (version 1.0), the platform will have the following restrictions:
 - **User story 4.2.** As a system administrator, I have the ability to edit a specific item in the help information.
 - **User story 4.3.** As a system administrator, I have the ability to delete a specific item in the help information.
 - **User story 4.4.** As a system administrator, I can see the list of help items and search/sort by the following criteria: title, text, date of update.
+
+### Epic 5. Onboarding
+TODO
+
+### EPIC 6. User privacy
+TODO: geolocation enablement
+
