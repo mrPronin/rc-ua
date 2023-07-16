@@ -7,7 +7,7 @@ For MVP (version 1.0), the platform will have the following restrictions:
 - the end user can use the project without authorization;
 - the platform provides the ability to work with the list of blood donation centers;
 - the platform provides the ability to work with news;
-- the platform provides the ability to work with reference information.
+- the platform provides the ability to work with FAQ.
 
 ## User stories
 
@@ -28,13 +28,22 @@ For MVP (version 1.0), the platform will have the following restrictions:
 
 ### Epic: 3. Anonymous User
 
-- **User story 3.1.** As an anonymous user, I can see the list of blood donation centers and search and sort them by the following criteria: name, region, city, tags. If geolocation is enabled, the region and city are automatically determined by default.
-- **User story 3.2.** As an anonymous user, I can see the news and search and sort by the following criteria: by date, by author, by title, by news text, by tags.
-- **User story 3.3.** As an anonymous user, I can see a list of reference information, search and sort by the following criteria: title, text, date of update.
+- **User story 3.1. Blood donation centers** As an anonymous user, I can see the list of blood donation centers and search and sort them by the following criteria: name, region, city, tags. If geolocation is enabled, the region and city are automatically determined by default. Multi-filter is enabled.
+- **User story 3.2. News** As an anonymous user, I can see the news and search and sort by the following criteria: by date, by author, by title, by news text, by tags. Multi-filter is enabled.
+- **User story 3.3. FAQ** As an anonymous user, I can see a list of questions and answers, search and sort by the following criteria: title, text, date of update. Multi-filter is enabled.
 
-### Epic: 4. Reference Information
+### Epic: 4. FAQ
 
-- **User story 4.1.** As a system administrator, I have the ability to add a new item to the reference information.
-- **User story 4.2.** As a system administrator, I have the ability to edit a specific item in the help information.
-- **User story 4.3.** As a system administrator, I have the ability to delete a specific item in the help information.
+- **User story 4.1.** As a system administrator, I have the ability to add a new item to the FAQ.
+- **User story 4.2.** As a system administrator, I have the ability to edit a specific item in the FAQ.
+- **User story 4.3.** As a system administrator, I have the ability to delete a specific item in the FAQ.
 - **User story 4.4.** As a system administrator, I can see the list of help items and search/sort by the following criteria: title, text, date of update.
+
+### Epic 5. Onboarding
+TODO
+
+### EPIC 6. User privacy
+TODO: geolocation enablement
+
+### EPIC 7. Blood donation appointment
+TODO: just draft enabled by feature flag
