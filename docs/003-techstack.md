@@ -26,6 +26,7 @@
 - form state management: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
 - internationalisation: [react-intl](https://github.com/formatjs/formatjs)
 - [GraphQL](https://graphql.org/) client: [Apollo Client](https://www.apollographql.com/docs/react/)
+- build system [Vite](https://vitejs.dev)
 
 ## DevOps | Platform, hosting, CI&CD
 
