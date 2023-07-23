@@ -3,8 +3,9 @@ import typing
 from typing import Optional
 from strawberry import relay
 from datetime import datetime
-from strawberry.types import Info
-from typing import Iterable
+
+# from strawberry.types import Info
+# from typing import Iterable
 from schema_types.blood_dotation_center_category import (
     BloodCenterCategory,
 )  # noqa: E501
@@ -96,13 +97,3 @@ class BloodDonationCenter(relay.Node):
     @strawberry.field
     def publishedAt(self) -> Optional[datetime]:
         return datetime.fromisoformat(self.attributes.get("publishedAt"))
-
-    @classmethod
-    def resolve_nodes(
-        cls,
-        *,
-        info: Info,
-        node_ids: Iterable[str],
-        required: bool = False,
-    ):
-        return []  # mocked_data
