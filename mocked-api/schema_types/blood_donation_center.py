@@ -10,10 +10,8 @@ from schema_types.blood_dotation_center_category import (
 )  # noqa: E501
 
 from schema_types.tag import Tag
-
 from schema_types.address import Address
-
-# from schema_types.contacts import Contacts
+from schema_types.contacts import Contacts
 from schema_types.work_schedule_item import WorkScheduleItem
 
 
@@ -52,6 +50,9 @@ class BloodDonationCenter(relay.Node):
         return Address(**self.attributes.get("address", {}))
 
     # contacts
+    @strawberry.field
+    def contacts(self) -> Optional[Contacts]:
+        return Contacts(**self.attributes.get("contacts", {}))
 
     # workSchedule
     @strawberry.field
