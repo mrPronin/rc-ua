@@ -9,7 +9,8 @@ from schema_types.blood_dotation_center_category import (
     BloodCenterCategory,
 )  # noqa: E501
 
-# from schema_types.tag import Tag
+from schema_types.tag import Tag
+
 # from schema_types.address import Address
 # from schema_types.contacts import Contacts
 from schema_types.work_schedule_item import WorkScheduleItem
@@ -22,22 +23,36 @@ class BloodDonationCenter(relay.Node):
     attributes: strawberry.Private[object]
 
     id: relay.NodeID[int]
-    # tags: typing.List[Tag]
     # address: Optional[Address]
     # contacts: Optional[Contacts]
 
+    # name
     @strawberry.field
     def name(self) -> str:
         return str(self.attributes.get("name"))
 
-    @strawberry.field
-    def notes(self) -> str:
-        return str(self.attributes.get("notes"))
-
+    # category
     @strawberry.field
     def category(self) -> BloodCenterCategory:
         return BloodCenterCategory(self.attributes.get("category"))
 
+    # notes
+    @strawberry.field
+    def notes(self) -> Optional[str]:
+        return str(self.attributes.get("notes"))
+
+    # tags
+    @strawberry.field
+    def tags(self) -> Optional[typing.List[Tag]]:
+        tag_dicts = self.attributes.get("tags", {}).get("data", [])
+        for tag_dict in tag_dicts:
+            yield Tag(**tag_dict.get("attributes", {}))
+
+    # address
+
+    # contacts
+
+    # workSchedule
     @strawberry.field
     def workSchedule(self) -> Optional[typing.List[WorkScheduleItem]]:
         for item in self.attributes.get("workSchedule"):
@@ -66,14 +81,17 @@ class BloodDonationCenter(relay.Node):
             }
             yield WorkScheduleItem(**new_item)
 
+    # createdAt
     @strawberry.field
     def createdAt(self) -> Optional[datetime]:
         return datetime.fromisoformat(self.attributes.get("createdAt"))
 
+    # updatedAt
     @strawberry.field
     def updatedAt(self) -> Optional[datetime]:
         return datetime.fromisoformat(self.attributes.get("updatedAt"))
 
+    # publishedAt
     @strawberry.field
     def publishedAt(self) -> Optional[datetime]:
         return datetime.fromisoformat(self.attributes.get("publishedAt"))
