@@ -11,11 +11,10 @@ from schema_types.blood_dotation_center_category import (
 
 from schema_types.tag import Tag
 
-# from schema_types.address import Address
+from schema_types.address import Address
+
 # from schema_types.contacts import Contacts
 from schema_types.work_schedule_item import WorkScheduleItem
-
-# from mocked.mocked_blood_dotation_centers import mocked_data
 
 
 @strawberry.type
@@ -23,7 +22,6 @@ class BloodDonationCenter(relay.Node):
     attributes: strawberry.Private[object]
 
     id: relay.NodeID[int]
-    # address: Optional[Address]
     # contacts: Optional[Contacts]
 
     # name
@@ -49,6 +47,9 @@ class BloodDonationCenter(relay.Node):
             yield Tag(**tag_dict.get("attributes", {}))
 
     # address
+    @strawberry.field
+    def address(self) -> Optional[Address]:
+        return Address(**self.attributes.get("address", {}))
 
     # contacts
 
