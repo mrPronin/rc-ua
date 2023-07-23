@@ -695,14 +695,680 @@
             "updatedAt": "2023-06-25T10:13:21.157Z",
             "publishedAt": "2023-06-25T10:13:21.150Z"
           }
+        },
+        {
+          "id": "33",
+          "attributes": {
+            "name": "Волинський обласний центр служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Волинська",
+              "city": "Луцьк",
+              "postalCode": "43000",
+              "street": "проспект Волі, 47",
+              "latitude": "50.74403072143776",
+              "longitude": "25.349204800585586"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380332 720 063",
+              "email": null,
+              "website": "https://blood-donation-center-35.business.site/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:19:39.426Z",
+            "updatedAt": "2023-06-25T10:19:44.638Z",
+            "publishedAt": "2023-06-25T10:19:44.632Z"
+          }
+        },
+        {
+          "id": "34",
+          "attributes": {
+            "name": "Новоград-Волинська філія Житомирського обласного Центру Крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Житомирська",
+              "city": "Звягель",
+              "postalCode": "11700",
+              "street": "вул. Герцена, 63",
+              "latitude": "50.60298179636592",
+              "longitude": "27.629637690229227"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380414153340",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:24:59.497Z",
+            "updatedAt": "2023-06-25T10:25:01.420Z",
+            "publishedAt": "2023-06-25T10:25:01.409Z"
+          }
+        },
+        {
+          "id": "35",
+          "attributes": {
+            "name": "Житомирський обласний центр крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Житомирська",
+              "city": "Житомир",
+              "postalCode": "10001",
+              "street": "вул. Кибальчича, 16",
+              "latitude": "50.24075617803801",
+              "longitude": "28.70611192288059"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380412333024",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:29:26.173Z",
+            "updatedAt": "2023-06-25T10:29:28.012Z",
+            "publishedAt": "2023-06-25T10:29:28.005Z"
+          }
+        },
+        {
+          "id": "36",
+          "attributes": {
+            "name": "Уманська міська лікарня - прийом крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Черкаська",
+              "city": "Умань",
+              "postalCode": "79000",
+              "street": "вул. Шевченка, 50",
+              "latitude": "48.759611077611524",
+              "longitude": "30.22150161143136"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380474452713",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:37:44.463Z",
+            "updatedAt": "2023-06-25T10:37:46.257Z",
+            "publishedAt": "2023-06-25T10:37:46.252Z"
+          }
+        },
+        {
+          "id": "37",
+          "attributes": {
+            "name": "Biopharma Plasma Черкаси",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Черкаська",
+              "city": "Черкаси",
+              "postalCode": "18000",
+              "street": "вул. Гоголя, 242",
+              "latitude": "49.441852047672974",
+              "longitude": "32.05910586722179"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "info@biopharma.ua",
+              "website": "https://biopharmaplasma.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:58:17.748Z",
+            "updatedAt": "2023-06-25T10:59:23.487Z",
+            "publishedAt": "2023-06-25T10:59:23.449Z"
+          }
+        },
+        {
+          "id": "38",
+          "attributes": {
+            "name": "Biopharma Plasma Кам'янське",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Дніпропетровська",
+              "city": "Кам’янське",
+              "postalCode": "51909",
+              "street": "проспект Аношкіна, 26",
+              "latitude": 48.547710610859,
+              "longitude": "34.59463436416435"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T11:04:55.199Z",
+            "updatedAt": "2023-06-25T11:04:58.589Z",
+            "publishedAt": "2023-06-25T11:04:58.581Z"
+          }
+        },
+        {
+          "id": "39",
+          "attributes": {
+            "name": "Biopharma Plasma Хмельницький",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Хмельницька",
+              "city": "Хмельницький",
+              "postalCode": "29000",
+              "street": "Прибугская, 11",
+              "latitude": "49.42957015376366",
+              "longitude": "26.99143522635374"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "media.biopharma2018@gmail.com",
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T15:10:58.754Z",
+            "updatedAt": "2023-06-25T15:11:02.577Z",
+            "publishedAt": "2023-06-25T15:11:02.572Z"
+          }
+        },
+        {
+          "id": "40",
+          "attributes": {
+            "name": "Біофарма Плазма Мукачево",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Закарпатская",
+              "city": "Мукачево",
+              "postalCode": "89600",
+              "street": "вул. Космонавта Беляєва, 8А",
+              "latitude": "49.441852047672974",
+              "longitude": "32.05910586722179"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "media.biopharma2018@gmail.com",
+              "website": "https://biopharmaplasma.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T15:19:16.207Z",
+            "updatedAt": "2023-06-25T15:19:29.959Z",
+            "publishedAt": "2023-06-25T15:19:29.949Z"
+          }
+        },
+        {
+          "id": "41",
+          "attributes": {
+            "name": "Biopharma Plasma Шостка",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Сумска",
+              "city": "Шостка",
+              "postalCode": "41100",
+              "street": "вул. Гоголя, 242",
+              "latitude": "51.8668947436968",
+              "longitude": "33.472643175511216"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "info@biopharma.ua",
+              "website": "https://biopharmaplasma.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T15:25:36.083Z",
+            "updatedAt": "2023-06-25T15:25:37.743Z",
+            "publishedAt": "2023-06-25T15:25:37.738Z"
+          }
+        },
+        {
+          "id": "42",
+          "attributes": {
+            "name": "Вінницький центр служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": [
+                {
+                  "attributes": {
+                    "name": "Tag1"
+                  }
+                }
+              ]
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Вінницька",
+              "city": "Вінниця",
+              "postalCode": "21000",
+              "street": "вул. Пирогова, 48",
+              "latitude": "49.22930948347683",
+              "longitude": "28.450653652557293"
+            },
+            "contacts": {
+              "cellPhone": "+ 38 (067) 492-00-34",
+              "landlinePhone": "+38 (0432) 67-19-59",
+              "email": "vrcb.vin@gmail.com",
+              "website": "https://facebook.com/donorvn"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-18T14:26:38.791Z",
+            "updatedAt": "2023-07-10T19:49:06.948Z",
+            "publishedAt": "2023-06-18T14:26:53.331Z"
+          }
         }
       ],
       "meta": {
         "pagination": {
           "total": 20,
           "page": 1,
-          "pageSize": 10,
-          "pageCount": 2
+          "pageSize": 50,
+          "pageCount": 1
         }
       }
     }

@@ -20,7 +20,6 @@ class BloodDonationCenter(relay.Node):
     attributes: strawberry.Private[object]
 
     id: relay.NodeID[int]
-    # contacts: Optional[Contacts]
 
     # name
     @strawberry.field
