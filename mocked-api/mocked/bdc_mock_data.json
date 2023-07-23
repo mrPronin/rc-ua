@@ -1,0 +1,676 @@
+{
+  "data": {
+    "bloodDonationCenters": {
+      "data": [
+        {
+          "id": "29",
+          "attributes": {
+            "name": "Хотинське відділення Чернівецького обласного центру служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": "Some notes",
+            "address": {
+              "country": "Україна",
+              "region": "Чернівецька",
+              "city": "Хотин",
+              "postalCode": "79000",
+              "street": "вул. Шевченка",
+              "latitude": "48.539748177806956",
+              "longitude": "26.478976014709204"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380373121603",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T09:55:23.845Z",
+            "updatedAt": "2023-06-25T09:55:29.186Z",
+            "publishedAt": "2023-06-25T09:55:29.163Z"
+          }
+        },
+        {
+          "id": "30",
+          "attributes": {
+            "name": "Хмельницька обласна станція переливання крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": "Some notes",
+            "address": {
+              "country": "Україна",
+              "region": "Хмельницька",
+              "city": "Хмельницький",
+              "postalCode": "29000",
+              "street": "вул. Пекарська, 65",
+              "latitude": "49.416681741621865",
+              "longitude": "26.973668993861438"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380382671793",
+              "email": "krovhm@ukr.net",
+              "website": "https://st-donor.lic.org.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:00:38.510Z",
+            "updatedAt": "2023-06-25T10:00:40.518Z",
+            "publishedAt": "2023-06-25T10:00:40.510Z"
+          }
+        },
+        {
+          "id": "31",
+          "attributes": {
+            "name": "Дніпровська обласна станція переливання крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Дніпропетровська",
+              "city": "Дніпро",
+              "postalCode": "49000",
+              "street": "проспект Богдана Хмельницького, 17",
+              "latitude": "48.44321657383549",
+              "longitude": "35.025586189339414"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380567209075",
+              "email": "krovdospk1@gmail.com",
+              "website": "https://donor.dp.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:08:18.649Z",
+            "updatedAt": "2023-06-25T10:08:20.051Z",
+            "publishedAt": "2023-06-25T10:08:20.045Z"
+          }
+        },
+        {
+          "id": "32",
+          "attributes": {
+            "name": "Тернопільський обласний центр служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Тернопільська",
+              "city": "Тернопіль",
+              "postalCode": "46002",
+              "street": "вул. Клінічна, 8",
+              "latitude": "49.55301178446804",
+              "longitude": "25.611953143544703"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380352252614",
+              "email": "02009519@mail.gov.ua",
+              "website": "https://tocsk.te.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:13:19.364Z",
+            "updatedAt": "2023-06-25T10:13:21.157Z",
+            "publishedAt": "2023-06-25T10:13:21.150Z"
+          }
+        },
+        {
+          "id": "33",
+          "attributes": {
+            "name": "Волинський обласний центр служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Волинська",
+              "city": "Луцьк",
+              "postalCode": "43000",
+              "street": "проспект Волі, 47",
+              "latitude": "50.74403072143776",
+              "longitude": "25.349204800585586"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380332 720 063",
+              "email": null,
+              "website": "https://blood-donation-center-35.business.site/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:19:39.426Z",
+            "updatedAt": "2023-06-25T10:19:44.638Z",
+            "publishedAt": "2023-06-25T10:19:44.632Z"
+          }
+        },
+        {
+          "id": "23",
+          "attributes": {
+            "name": "Київський обласний центр крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Київська",
+              "city": "Біла Церква",
+              "postalCode": "09100",
+              "street": "вул. Гетьмана Сагайдачного, 171",
+              "latitude": "49.81295942863397",
+              "longitude": "30.07946220211184"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380456345101",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:34:18.274Z",
+            "updatedAt": "2023-06-25T10:34:20.040Z",
+            "publishedAt": "2023-06-25T10:34:20.030Z"
+          }
+        },
+        {
+          "id": "24",
+          "attributes": {
+            "name": "Львівський центр служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Львівська",
+              "city": "Львів",
+              "postalCode": "79000",
+              "street": "вул. Пекарська, 65",
+              "latitude": "49.83640346444093",
+              "longitude": "24.046860078187976"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380322756405",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T09:29:18.789Z",
+            "updatedAt": "2023-06-25T09:29:36.872Z",
+            "publishedAt": "2023-06-25T09:29:36.866Z"
+          }
+        },
+        {
+          "id": "25",
+          "attributes": {
+            "name": "Рівненський обласний центр служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Рівненська",
+              "city": "Рівне",
+              "postalCode": "33014",
+              "street": "вул. Степана Бандери, 31",
+              "latitude": "50.61330409854856",
+              "longitude": "26.258426567624433"
+            },
+            "contacts": {
+              "cellPhone": "+380673634144 ",
+              "landlinePhone": "+380322756405",
+              "email": "rivneospk@gmail.com",
+              "website": "https://rospk.communal.rv.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T09:34:45.151Z",
+            "updatedAt": "2023-06-25T09:34:50.646Z",
+            "publishedAt": "2023-06-25T09:34:50.640Z"
+          }
+        },
+        {
+          "id": "26",
+          "attributes": {
+            "name": "Прикарпатський обласний центр служби крові ",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Івано-Франківська",
+              "city": "Івано-Франківськ",
+              "postalCode": "76000",
+              "street": "Степана Бандери, 23",
+              "latitude": "48.914853085859384",
+              "longitude": "24.718424550821737"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380342789017",
+              "email": "ospkif@meta.ua",
+              "website": "http://ospk.if.ua/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T09:41:42.376Z",
+            "updatedAt": "2023-06-25T09:41:44.231Z",
+            "publishedAt": "2023-06-25T09:41:44.224Z"
+          }
+        },
+        {
+          "id": "27",
+          "attributes": {
+            "name": "Чернівецький обласний центр служби крові",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Чернівецька",
+              "city": "Чернівці",
+              "postalCode": "58000",
+              "street": "вул. Українська, 36",
+              "latitude": "48.28817501132502",
+              "longitude": "25.940235640938845"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+3800372523443",
+              "email": "cv.ocsk@ukr.net",
+              "website": "https://www.facebook.com/CHOCSK/"
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T09:45:26.371Z",
+            "updatedAt": "2023-06-25T09:45:30.750Z",
+            "publishedAt": "2023-06-25T09:45:30.741Z"
+          }
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "total": 20,
+          "page": 1,
+          "pageSize": 10,
+          "pageCount": 2
+        }
+      }
+    }
+  }
+}

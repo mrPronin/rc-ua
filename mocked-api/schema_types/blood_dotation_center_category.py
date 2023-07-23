@@ -3,6 +3,6 @@ from enum import Enum
 
 
 @strawberry.enum
-class ENUM_BLOODDONATIONCENTER_CATEGORY(Enum):
+class BloodCenterCategory(Enum):
     STATIONARY = "Stationary"
     MOBILE = "Mobile"
