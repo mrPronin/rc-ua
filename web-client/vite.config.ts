@@ -8,7 +8,9 @@ export default defineConfig({
     alias: {
       'components': '/src/components',
       'routes': '/src/routes',
-      'view': '/src/view'
+      'view': '/src/view',
+      'API': '/src/API',
+      'interfaces': '/src/interfaces'
     },
   },
   plugins: [

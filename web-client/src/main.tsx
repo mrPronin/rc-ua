@@ -2,10 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'http://localhost:8000/graphql',
+  cache: new InMemoryCache(),
+});
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>,
 );
 // Checking for the presence of the beforeinstallprompt event
@@ -34,10 +42,10 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js')
-    .then(function(registration) {
+    .then(function (registration) {
       console.log('Service Worker registered with success:', registration);
     })
-    .catch(function(error) {
+    .catch(function (error) {
       console.log('Error registering a Service Worker:', error);
     });
 }

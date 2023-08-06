@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import FlexBox from 'components/StyledComponents/FlexBox';
 
 import { appRoutesMap } from 'routes/appRotesMap';
 import { useLocation } from 'react-router-dom';
@@ -25,7 +26,7 @@ interface IMainLayout {
 const drawerWidth = 240;
 
 const MainLayout = ({ children, ...props }: IMainLayout) => {
-    let { pathname } = useLocation();
+    const { pathname } = useLocation();
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -34,7 +35,7 @@ const MainLayout = ({ children, ...props }: IMainLayout) => {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+         <FlexBox onClick={handleDrawerToggle} textAlign="center" justify="center" direction="column" align="center"> 
             <Typography variant="h6" sx={{ my: 2 }}>
                 RC-UA
             </Typography>
@@ -51,13 +52,13 @@ const MainLayout = ({ children, ...props }: IMainLayout) => {
                     </ListItem>
                 ))}
             </List>
-        </Box>
+        </FlexBox>
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex' }}>
+        <FlexBox>
             <CssBaseline />
             <AppBar component="nav">
                 <Toolbar>
@@ -107,11 +108,11 @@ const MainLayout = ({ children, ...props }: IMainLayout) => {
                     {drawer}
                 </Drawer>
             </Box>
-            <Box component="main" sx={{ p: 3 }}>
+            <FlexBox direction="column" padding="24px" width="100%">
                 <Toolbar />
                 {children}
-            </Box>
-        </Box>
+            </FlexBox>
+        </FlexBox>
     )
 };
 
