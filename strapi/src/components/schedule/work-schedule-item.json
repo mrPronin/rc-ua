@@ -7,19 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "weekDay": {
-      "type": "enumeration",
-      "enum": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "required": true
-    },
     "startTimeBeforeLunchBreak": {
       "type": "time"
     },
@@ -31,6 +18,11 @@
     },
     "endTimeAfterLunchBreak": {
       "type": "time"
+    },
+    "week_day": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::week-day.week-day"
     }
   }
 }
