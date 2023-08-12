@@ -4,8 +4,6 @@ from typing import Optional
 from strawberry import relay
 from datetime import datetime
 
-# from strawberry.types import Info
-# from typing import Iterable
 from schema_types.blood_dotation_center_category import (
     BloodCenterCategory,
 )  # noqa: E501
