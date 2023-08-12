@@ -1,0 +1,88 @@
+{
+  "data": {
+    "bloodDonationCenters": {
+      "data": [
+        {
+          "id": "23",
+          "attributes": {
+            "name": "Київський обласний центр крові",
+            "category": "Stationary",
+            "tags": {
+              "data": [
+                {
+                  "attributes": {
+                    "name": "Tag1"
+                  }
+                }
+              ]
+            },
+            "notes": null,
+            "address": {
+              "country": "Україна",
+              "region": "Київська",
+              "city": "Біла Церква",
+              "postalCode": "09100",
+              "street": "вул. Гетьмана Сагайдачного, 171",
+              "latitude": "49.81295942863397",
+              "longitude": "30.07946220211184"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380456345101",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "weekDay": "Monday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Tuesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Wednesday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Thursday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "weekDay": "Friday",
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ],
+            "createdAt": "2023-06-25T10:34:18.274Z",
+            "updatedAt": "2023-07-23T17:04:51.394Z",
+            "publishedAt": "2023-06-25T10:34:20.030Z"
+          }
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "total": 20,
+          "page": 1,
+          "pageSize": 50,
+          "pageCount": 1
+        }
+      }
+    }
+  }
+}
