@@ -6,7 +6,6 @@ from datetime import time
 
 @strawberry.type
 class WorkScheduleItem:
-    id: strawberry.ID
     weekDay: ENUM_WEEKDAY
     startTimeBeforeLunchBreak: Optional[time]
     endTimeBeforeLunchBreak: Optional[time]
