@@ -3,75 +3,106 @@
     "bloodDonationCenters": {
       "data": [
         {
-          "id": "23",
+          "id": "3",
           "attributes": {
-            "name": "Київський обласний центр крові",
+            "name": "Vinnytsia Blood Service Center",
             "category": "Stationary",
-            "tags": {
-              "data": [
-                {
-                  "attributes": {
-                    "name": "Tag1"
-                  }
-                }
-              ]
-            },
             "notes": null,
             "address": {
-              "country": "Україна",
-              "region": "Київська",
-              "city": "Біла Церква",
-              "postalCode": "09100",
-              "street": "вул. Гетьмана Сагайдачного, 171",
-              "latitude": "49.81295942863397",
-              "longitude": "30.07946220211184"
+              "country": "Ukraine",
+              "region": "Vinnytsia region",
+              "city": "Vinnytsia",
+              "postalCode": "21000",
+              "street": "48 Pirogova St.",
+              "latitude": "49.22930948347683",
+              "longitude": "28.450653652557293"
             },
             "contacts": {
-              "cellPhone": null,
-              "landlinePhone": "+380456345101",
-              "email": null,
-              "website": null
+              "cellPhone": "+ 38 (067) 492-00-34",
+              "landlinePhone": "+38 (0432) 67-19-59",
+              "email": "vrcb.vin@gmail.com",
+              "website": "https://facebook.com/donorvn"
             },
             "workSchedule": [
               {
-                "weekDay": "Monday",
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
                 "startTimeBeforeLunchBreak": "08:00:00.000",
                 "endTimeBeforeLunchBreak": null,
                 "startTimeAfterLunchBreak": null,
                 "endTimeAfterLunchBreak": "14:00:00.000"
               },
               {
-                "weekDay": "Tuesday",
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
                 "startTimeBeforeLunchBreak": "08:00:00.000",
                 "endTimeBeforeLunchBreak": null,
                 "startTimeAfterLunchBreak": null,
                 "endTimeAfterLunchBreak": "14:00:00.000"
               },
               {
-                "weekDay": "Wednesday",
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
                 "startTimeBeforeLunchBreak": "08:00:00.000",
                 "endTimeBeforeLunchBreak": null,
                 "startTimeAfterLunchBreak": null,
                 "endTimeAfterLunchBreak": "14:00:00.000"
               },
               {
-                "weekDay": "Thursday",
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
                 "startTimeBeforeLunchBreak": "08:00:00.000",
                 "endTimeBeforeLunchBreak": null,
                 "startTimeAfterLunchBreak": null,
                 "endTimeAfterLunchBreak": "14:00:00.000"
               },
               {
-                "weekDay": "Friday",
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
                 "startTimeBeforeLunchBreak": "08:00:00.000",
                 "endTimeBeforeLunchBreak": null,
                 "startTimeAfterLunchBreak": null,
                 "endTimeAfterLunchBreak": "14:00:00.000"
               }
             ],
-            "createdAt": "2023-06-25T10:34:18.274Z",
-            "updatedAt": "2023-07-23T17:04:51.394Z",
-            "publishedAt": "2023-06-25T10:34:20.030Z"
+            "createdAt": "2023-06-18T12:26:38.791Z",
+            "updatedAt": "2023-08-06T13:27:46.481Z",
+            "publishedAt": "2023-06-18T12:26:53.331Z"
           }
         }
       ],
