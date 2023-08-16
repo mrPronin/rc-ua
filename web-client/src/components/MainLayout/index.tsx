@@ -1,4 +1,4 @@
-import { ReactNode, useState, useEffect } from 'react';
+import React, { ReactNode, useState, useEffect } from 'react';
 import { NavLink, NavLinkLogo } from './styled';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
