@@ -2,7 +2,7 @@ import strawberry
 from typing import Iterable
 from strawberry import relay
 from schema_types.blood_donation_center import BloodDonationCenter
-from mocked.mocked_blood_dotation_centers import blood_dotation_data
+from mocked.mocked_blood_dotation_centers import load_bdc_data
 
 
 @strawberry.type
@@ -11,7 +11,7 @@ class Query:
 
     @relay.connection(relay.ListConnection[BloodDonationCenter])
     def bloodDonationCenters(self) -> Iterable[BloodDonationCenter]:
-        for item in blood_dotation_data:
+        for item in load_bdc_data():
             yield BloodDonationCenter(**item)
 
 
