@@ -4,7 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-strawberry-graphql = {extras = ["debug-server"], version = "*"}
+strawberry-graphql = {version = "*", extras = ["fastapi"]}
+fastapi = "*"
+uvicorn = {version = "*", extras = ["standard"]}
 
 [dev-packages]
 flake8 = "*"
