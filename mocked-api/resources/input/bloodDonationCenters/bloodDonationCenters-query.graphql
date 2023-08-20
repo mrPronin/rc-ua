@@ -11,13 +11,6 @@
       attributes {
         name
         category
-        tags {
-          data {
-            attributes {
-              name
-            }
-          }
-        }
         notes
         address {
           country
