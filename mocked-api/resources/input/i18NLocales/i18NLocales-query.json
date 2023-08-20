@@ -1,0 +1,22 @@
+{
+  "data": {
+    "i18NLocales": {
+      "data": [
+        {
+          "id": "7",
+          "attributes": {
+            "name": "English (en)",
+            "code": "en"
+          }
+        },
+        {
+          "id": "8",
+          "attributes": {
+            "name": "Ukrainian (Ukraine) (uk-UA)",
+            "code": "uk-UA"
+          }
+        }
+      ]
+    }
+  }
+}
