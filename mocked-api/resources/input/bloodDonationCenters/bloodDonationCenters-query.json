@@ -1,0 +1,2082 @@
+{
+  "data": {
+    "bloodDonationCenters": {
+      "data": [
+        {
+          "id": "3",
+          "attributes": {
+            "name": "Vinnytsia Blood Service Center",
+            "category": "Stationary",
+            "tags": {
+              "data": [
+                {
+                  "attributes": {
+                    "name": "action"
+                  }
+                }
+              ]
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Vinnytsia region",
+              "city": "Vinnytsia",
+              "postalCode": "21000",
+              "street": "48 Pirogova St.",
+              "latitude": "49.22930948347683",
+              "longitude": "28.450653652557293"
+            },
+            "contacts": {
+              "cellPhone": "+ 38 (067) 492-00-34",
+              "landlinePhone": "+38 (0432) 67-19-59",
+              "email": "vrcb.vin@gmail.com",
+              "website": "https://facebook.com/donorvn"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "4",
+          "attributes": {
+            "name": "Lviv Blood Service Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Lviv region",
+              "city": "Lviv",
+              "postalCode": "79000",
+              "street": "65 Pekarska St.",
+              "latitude": "49.83640346444093",
+              "longitude": "24.046860078187976"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380322756405",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "5",
+          "attributes": {
+            "name": "Rivne Regional Blood Service Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Rivne region",
+              "city": "Rivne",
+              "postalCode": "33014",
+              "street": "31 Stepan Bandera St.",
+              "latitude": "50.61330409854856",
+              "longitude": "26.258426567624433"
+            },
+            "contacts": {
+              "cellPhone": "+380673634144 ",
+              "landlinePhone": "+380322756405",
+              "email": "rivneospk@gmail.com",
+              "website": "https://rospk.communal.rv.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "6",
+          "attributes": {
+            "name": "Carpathian Regional Blood Service Center ",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Ivano-Frankivsk region",
+              "city": "Ivano-Frankivsk",
+              "postalCode": "76000",
+              "street": "23, Stepan Bandera Street",
+              "latitude": "48.914853085859384",
+              "longitude": "24.718424550821737"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380342789017",
+              "email": "ospkif@meta.ua",
+              "website": "http://ospk.if.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "7",
+          "attributes": {
+            "name": "Chernivtsi Regional Blood Service Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Chernivtsi region",
+              "city": "Chernivtsi",
+              "postalCode": "58000",
+              "street": "36 Ukrainska St.",
+              "latitude": "48.28817501132502",
+              "longitude": "25.940235640938845"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+3800372523443",
+              "email": "cv.ocsk@ukr.net",
+              "website": "https://www.facebook.com/CHOCSK/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "8",
+          "attributes": {
+            "name": "Kamianets-Podilskyi city blood transfusion station",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Khmelnytsky region",
+              "city": "Kamianets-Podilskyi",
+              "postalCode": "32300",
+              "street": "116 Timiryazeva St.",
+              "latitude": "48.68763016539598",
+              "longitude": "26.58168973786262"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380384923954",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "9",
+          "attributes": {
+            "name": "Khotyn branch of the Chernivtsi regional blood service center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Chernivtsi region",
+              "city": "Khotyn",
+              "postalCode": "79000",
+              "street": "Shevchenko St.",
+              "latitude": "48.539748177806956",
+              "longitude": "26.478976014709204"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380373121603",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "10",
+          "attributes": {
+            "name": "Khmelnytsky Regional Blood Transfusion Station",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Khmelnytsky region",
+              "city": "Khmelnytsky",
+              "postalCode": "29000",
+              "street": "65 Pekarska St.",
+              "latitude": "49.416681741621865",
+              "longitude": "26.973668993861438"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380382671793",
+              "email": "krovhm@ukr.net",
+              "website": "https://st-donor.lic.org.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "11",
+          "attributes": {
+            "name": "Dnipro Regional Blood Transfusion Station",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Dnipropetrovska oblast",
+              "city": "Dnipro",
+              "postalCode": "49000",
+              "street": "17 Bohdana Khmelnytskoho Avenue",
+              "latitude": "48.44321657383549",
+              "longitude": "35.025586189339414"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380567209075",
+              "email": "krovdospk1@gmail.com",
+              "website": "https://donor.dp.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "12",
+          "attributes": {
+            "name": "Ternopil Regional Blood Service Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Ternopil region",
+              "city": "Ternopil",
+              "postalCode": "46002",
+              "street": "8 Klinichna St.",
+              "latitude": "49.55301178446804",
+              "longitude": "25.611953143544703"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380352252614",
+              "email": "02009519@mail.gov.ua",
+              "website": "https://tocsk.te.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "13",
+          "attributes": {
+            "name": "Volyn Regional Blood Service Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Volyn region",
+              "city": "Lutsk",
+              "postalCode": "43000",
+              "street": "47 Voly Avenue",
+              "latitude": "50.74403072143776",
+              "longitude": "25.349204800585586"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380332 720 063",
+              "email": null,
+              "website": "https://blood-donation-center-35.business.site/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "14",
+          "attributes": {
+            "name": "Novohrad-Volyn branch of the Zhytomyr Regional Blood Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Zhytomyr region",
+              "city": "Zvyagel",
+              "postalCode": "11700",
+              "street": "63 Herzena St.",
+              "latitude": "50.60298179636592",
+              "longitude": "27.629637690229227"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380414153340",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "15",
+          "attributes": {
+            "name": "Zhytomyr Regional Blood Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Zhytomyr region",
+              "city": "Zhytomyr",
+              "postalCode": "10001",
+              "street": "16 Kibalchycha St.",
+              "latitude": "50.24075617803801",
+              "longitude": "28.70611192288059"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380412333024",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "16",
+          "attributes": {
+            "name": "Kyiv Regional Blood Center",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Kyiv region",
+              "city": "Bila Tserkva",
+              "postalCode": "09100",
+              "street": "171, Hetmana Sahaidachnoho St.",
+              "latitude": "49.81295942863397",
+              "longitude": "30.07946220211184"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380456345101",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "17",
+          "attributes": {
+            "name": "Uman City Hospital - blood donation",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Cherkasy region",
+              "city": "Uman",
+              "postalCode": "79000",
+              "street": "50 Shevchenko St.",
+              "latitude": "48.759611077611524",
+              "longitude": "30.22150161143136"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "+380474452713",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "18",
+          "attributes": {
+            "name": "Biopharma Plasma Cherkasy",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Cherkasy region",
+              "city": "Cherkasy",
+              "postalCode": "18000",
+              "street": "242 Gogol St.",
+              "latitude": "49.441852047672974",
+              "longitude": "32.05910586722179"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "info@biopharma.ua",
+              "website": "https://biopharmaplasma.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "19",
+          "attributes": {
+            "name": "Biopharma Plasma Kamianske",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Dnipropetrovska oblast",
+              "city": "Kamianske",
+              "postalCode": "51909",
+              "street": "26 Anoshkina Avenue",
+              "latitude": 48.547710610859,
+              "longitude": "34.59463436416435"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": null,
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "20",
+          "attributes": {
+            "name": "Biopharma Plasma Khmelnytsky",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Khmelnytsky region",
+              "city": "Khmelnytsky",
+              "postalCode": "29000",
+              "street": "Pribugskaya, 11",
+              "latitude": "49.42957015376366",
+              "longitude": "26.99143522635374"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "media.biopharma2018@gmail.com",
+              "website": null
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "21",
+          "attributes": {
+            "name": "Biopharma Plasma Mukachevo",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Zakarpattia region",
+              "city": "Mukachevo",
+              "postalCode": "89600",
+              "street": "8A, Kosmonavta Belyaeva str.",
+              "latitude": "49.441852047672974",
+              "longitude": "32.05910586722179"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "media.biopharma2018@gmail.com",
+              "website": "https://biopharmaplasma.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "22",
+          "attributes": {
+            "name": "Biopharma Plasma Shostka",
+            "category": "Stationary",
+            "tags": {
+              "data": []
+            },
+            "notes": null,
+            "address": {
+              "country": "Ukraine",
+              "region": "Sumy region",
+              "city": "Shostka",
+              "postalCode": "41100",
+              "street": "242 Gogol St.",
+              "latitude": "51.8668947436968",
+              "longitude": "33.472643175511216"
+            },
+            "contacts": {
+              "cellPhone": null,
+              "landlinePhone": "0800600003",
+              "email": "info@biopharma.ua",
+              "website": "https://biopharmaplasma.ua/"
+            },
+            "workSchedule": [
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Monday",
+                      "ShortName": "Mon",
+                      "weekDayNumber": 1
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Tuesday",
+                      "ShortName": "Tue",
+                      "weekDayNumber": 2
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Wednesday",
+                      "ShortName": "Wed",
+                      "weekDayNumber": 3
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Thursday",
+                      "ShortName": "Thu",
+                      "weekDayNumber": 4
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              },
+              {
+                "week_day": {
+                  "data": {
+                    "attributes": {
+                      "Name": "Friday",
+                      "ShortName": "Fri",
+                      "weekDayNumber": 5
+                    }
+                  }
+                },
+                "startTimeBeforeLunchBreak": "08:00:00.000",
+                "endTimeBeforeLunchBreak": null,
+                "startTimeAfterLunchBreak": null,
+                "endTimeAfterLunchBreak": "14:00:00.000"
+              }
+            ]
+          }
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "total": 20,
+          "page": 1,
+          "pageSize": 30,
+          "pageCount": 1
+        }
+      }
+    }
+  }
+}

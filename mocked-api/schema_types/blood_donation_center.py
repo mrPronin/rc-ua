@@ -12,6 +12,7 @@ from schema_types.blood_dotation_center_category import (
 from schema_types.address import Address
 from schema_types.contacts import Contacts
 from schema_types.work_schedule_item import WorkScheduleItem
+from schema_types.weekday import WeekdayItem
 
 
 def convert_string_to_time(time_string: Optional[str]) -> Optional[time]:
@@ -56,8 +57,12 @@ class BloodDonationCenter(relay.Node):
     @strawberry.field
     def workSchedule(self) -> Optional[typing.List[WorkScheduleItem]]:
         for item in self.attributes.get("workSchedule"):
+            week_day_item = WeekdayItem(
+                **item["week_day"].get("data").get("attributes")
+            )  # noqa: E501
+
             yield WorkScheduleItem(
-                weekDay=item["weekDay"],
+                weekDay=week_day_item,
                 startTimeBeforeLunchBreak=convert_string_to_time(
                     item["startTimeBeforeLunchBreak"]
                 ),
