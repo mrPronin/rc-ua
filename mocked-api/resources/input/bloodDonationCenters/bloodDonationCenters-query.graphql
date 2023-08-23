@@ -1,0 +1,63 @@
+{
+  bloodDonationCenters(
+    filters: {}
+    pagination: { pageSize: 30 }
+    sort: ["id"]
+    publicationState: LIVE
+    locale: "en"
+  ) {
+    data {
+      id
+      attributes {
+        name
+        category
+        tags {
+          data {
+            attributes {
+              name
+            }
+          }
+        }
+        notes
+        address {
+          country
+          region
+          city
+          postalCode
+          street
+          latitude
+          longitude
+        }
+        contacts {
+          cellPhone
+          landlinePhone
+          email
+          website
+        }
+        workSchedule {
+          week_day {
+            data {
+              attributes {
+                Name
+                ShortName
+                weekDayNumber
+              }
+            }
+          }
+          startTimeBeforeLunchBreak
+          endTimeBeforeLunchBreak
+          startTimeAfterLunchBreak
+          endTimeAfterLunchBreak
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+        page
+        pageSize
+        pageCount
+      }
+    }
+  }
+}
