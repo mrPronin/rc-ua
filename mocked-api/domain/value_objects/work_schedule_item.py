@@ -1,5 +1,5 @@
 import strawberry
-from schema_types.weekday import WeekdayItem
+from domain.value_objects.weekday import WeekdayItem
 from typing import Optional
 from datetime import time
 

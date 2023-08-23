@@ -7,15 +7,6 @@
           "attributes": {
             "name": "Vinnytsia Blood Service Center",
             "category": "Stationary",
-            "tags": {
-              "data": [
-                {
-                  "attributes": {
-                    "name": "action"
-                  }
-                }
-              ]
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -116,9 +107,6 @@
           "attributes": {
             "name": "Lviv Blood Service Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -219,9 +207,6 @@
           "attributes": {
             "name": "Rivne Regional Blood Service Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -322,9 +307,6 @@
           "attributes": {
             "name": "Carpathian Regional Blood Service Center ",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -425,9 +407,6 @@
           "attributes": {
             "name": "Chernivtsi Regional Blood Service Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -528,9 +507,6 @@
           "attributes": {
             "name": "Kamianets-Podilskyi city blood transfusion station",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -631,9 +607,6 @@
           "attributes": {
             "name": "Khotyn branch of the Chernivtsi regional blood service center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -734,9 +707,6 @@
           "attributes": {
             "name": "Khmelnytsky Regional Blood Transfusion Station",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -837,9 +807,6 @@
           "attributes": {
             "name": "Dnipro Regional Blood Transfusion Station",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -940,9 +907,6 @@
           "attributes": {
             "name": "Ternopil Regional Blood Service Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1043,9 +1007,6 @@
           "attributes": {
             "name": "Volyn Regional Blood Service Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1146,9 +1107,6 @@
           "attributes": {
             "name": "Novohrad-Volyn branch of the Zhytomyr Regional Blood Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1249,9 +1207,6 @@
           "attributes": {
             "name": "Zhytomyr Regional Blood Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1352,9 +1307,6 @@
           "attributes": {
             "name": "Kyiv Regional Blood Center",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1455,9 +1407,6 @@
           "attributes": {
             "name": "Uman City Hospital - blood donation",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1558,9 +1507,6 @@
           "attributes": {
             "name": "Biopharma Plasma Cherkasy",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1661,9 +1607,6 @@
           "attributes": {
             "name": "Biopharma Plasma Kamianske",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1764,9 +1707,6 @@
           "attributes": {
             "name": "Biopharma Plasma Khmelnytsky",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1867,9 +1807,6 @@
           "attributes": {
             "name": "Biopharma Plasma Mukachevo",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",
@@ -1970,9 +1907,6 @@
           "attributes": {
             "name": "Biopharma Plasma Shostka",
             "category": "Stationary",
-            "tags": {
-              "data": []
-            },
             "notes": null,
             "address": {
               "country": "Ukraine",

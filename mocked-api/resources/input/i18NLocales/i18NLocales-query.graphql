@@ -1,0 +1,11 @@
+{
+  i18NLocales {
+    data {
+      id
+      attributes {
+        name
+        code
+      }
+    }
+  }
+}
