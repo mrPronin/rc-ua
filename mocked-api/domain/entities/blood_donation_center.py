@@ -5,14 +5,14 @@ from strawberry import relay
 from datetime import datetime
 from datetime import time
 
-from schema_types.blood_dotation_center_category import (
+from domain.enums.blood_dotation_center_category import (
     BloodCenterCategory,
 )  # noqa: E501
 
-from schema_types.address import Address
-from schema_types.contacts import Contacts
-from schema_types.work_schedule_item import WorkScheduleItem
-from schema_types.weekday import WeekdayItem
+from domain.value_objects.address import Address
+from domain.value_objects.contacts import Contacts
+from domain.value_objects.work_schedule_item import WorkScheduleItem
+from domain.value_objects.weekday import WeekdayItem
 
 
 def convert_string_to_time(time_string: Optional[str]) -> Optional[time]:
