@@ -12,12 +12,13 @@ interface FlexBoxProps {
   borderRadius?: string;
   textAlign?: string;
   scrollY?: string;
+  flex?: string;
 }
   // flex-shrink: 0;
 
 const FlexBox = styled.div<FlexBoxProps>`
   display: flex;
-  flex:1;
+  flex: ${({flex}) => flex ? flex : ''};
   justify-content ${ ({justify})=> justify ? justify : null};
   flex-direction: ${({direction}) => direction ? direction : null};
   align-items: ${({align}) => align ? align : null};

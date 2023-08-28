@@ -10,7 +10,8 @@ export default defineConfig({
       'routes': '/src/routes',
       'view': '/src/view',
       'API': '/src/API',
-      'interfaces': '/src/interfaces'
+      'interfaces': '/src/interfaces',
+      'assets': '/src/assets'
     },
   },
   plugins: [

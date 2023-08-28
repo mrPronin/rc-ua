@@ -12,8 +12,9 @@ const NavLinkLogo = styled(NavLinkElement)`
 `
 const NavLink = styled(NavLinkLogo)`
   font-size: 16px;
+  color: #150000;
   &.active{
-    color: #16F2E7;
+    color: #ff5050;
   }
 `
 export {

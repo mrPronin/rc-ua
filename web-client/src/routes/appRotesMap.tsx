@@ -2,17 +2,17 @@ import { Home, Article, Info } from '@mui/icons-material';
 
 export const appRoutesMap = [
   {
-    name: 'Центри переливання крові',
+    name: 'Blood centers',
     to: '/',
     icon: <Home style={{ width: '24px', height: '24px' }} />
   },
   {
-    name: 'Новини',
+    name: 'News',
     to: '/news',
     icon: <Article style={{ width: '24px', height: '24px' }} />
   },
   {
-    name: 'Додаткова інформація',
+    name: 'FAQ',
     to: '/information',
     icon: <Info style={{ width: '24px', height: '24px' }} />
   }
