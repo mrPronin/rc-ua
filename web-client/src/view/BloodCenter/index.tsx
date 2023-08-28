@@ -18,27 +18,27 @@ import SearchInput from 'components/SearchInput';
 import FilterListIcon from '@mui/icons-material/FilterList';
 
 const BloodCenters: React.FC = () => {
-  const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
+  // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
   // const [pageInfo, setPageInfo] = useState<IPageInfo>();
   const [bloodCenters, setBloodCenters] = useState<IBloodDonationCenter[]>([]);
   // const [currentPage, setCurrentPage] = useState(1);
 
-  useEffect(() => {
-    if (data) {
-      initData(data);
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   if (data) {
+  //     initData(data);
+  //   }
+  // }, [data]);
 
-  const initData = (data: IBloodDonationCenterConnection) => {
-    // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
-    const newEdges = data?.bloodDonationCenters?.edges;
-    const newBloodDonationCenters = newEdges?.map((obj: IBloodDonationCenterEdge) => {
-      const { node } = obj;
-      return { ...node };
-    });
-    setBloodCenters(newBloodDonationCenters);
-  }
+  // const initData = (data: IBloodDonationCenterConnection) => {
+  //   // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
+  //   const newEdges = data?.bloodDonationCenters?.edges;
+  //   const newBloodDonationCenters = newEdges?.map((obj: IBloodDonationCenterEdge) => {
+  //     const { node } = obj;
+  //     return { ...node };
+  //   });
+  //   setBloodCenters(newBloodDonationCenters);
+  // }
   // console.log(bloodCenters, 'edges-bloodCenters')
 
   // const loadNext = async () => {
@@ -82,11 +82,11 @@ const BloodCenters: React.FC = () => {
   //   }
   // };
 
-  if (loading) return (<FlexBox margin="25px 0" justify="center">
-    <CircularProgress />
-  </FlexBox>);
+  // if (loading) return (<FlexBox margin="25px 0" justify="center">
+  //   <CircularProgress />
+  // </FlexBox>);
 
-  if (error) return <p>Error : {error.message}</p>;
+  // if (error) return <p>Error : {error.message}</p>;
 
   return (
     <>
