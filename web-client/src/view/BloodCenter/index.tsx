@@ -6,7 +6,8 @@ import { IBloodDonationCenterConnection, /*IPageInfo,*/ IBloodDonationCenterEdge
 import Button from 'components/Button';
 import Box from '@mui/material/Box';
 import FlexBox from 'components/StyledComponents/FlexBox';
-import CircularProgress from '@mui/material/CircularProgress';
+import Text from 'components/StyledComponents/Text';
+// import CircularProgress from '@mui/material/CircularProgress';
 import SearchInput from 'components/SearchInput';
 // import IconButton from '@mui/material/IconButton';
 // import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -16,13 +17,57 @@ import SearchInput from 'components/SearchInput';
 // import Menu from '@mui/material/Menu';
 // import MenuItem from '@mui/material/MenuItem';
 import FilterListIcon from '@mui/icons-material/FilterList';
-
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+// import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+import Slide, { SlideProps } from '@mui/material/Slide';
+// import { TransitionProps } from '@mui/material/transitions';
+import { styled } from '@mui/material/styles';
+const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
+  function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+  },
+);
+const CustomDialog = styled(Dialog)(()=> ({
+  '& .MuiDialog-paper': {
+    width: '100%',
+    height: '250px',
+    borderRadius: '16px 16px 0 0',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    margin: 0,
+    maxWidth: 'none',
+    boxShadow: 'none',
+  },
+  '& .MuiBackdrop-root': {
+    backgroundColor: 'rgba(255, 255, 255, 0)', // Зробили фон прозорим
+  },
+}));
 const BloodCenters: React.FC = () => {
   // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
   // const [pageInfo, setPageInfo] = useState<IPageInfo>();
   const [bloodCenters, setBloodCenters] = useState<IBloodDonationCenter[]>([]);
   // const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window) {
+      const checkIsMobile = () => {
+        setIsMobile(window.innerWidth <= 600);
+      };
+
+      window.addEventListener('resize', checkIsMobile);
+      checkIsMobile();
+
+      return () => {
+        window.removeEventListener('resize', checkIsMobile);
+      };
+    }
+  }, []);
 
   // useEffect(() => {
   //   if (data) {
@@ -87,25 +132,35 @@ const BloodCenters: React.FC = () => {
   // </FlexBox>);
 
   // if (error) return <p>Error : {error.message}</p>;
+  const [open, setOpen] = useState(false);
 
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <>
-      <Box display="flex" sx={{padding:0}}>
-        <SearchInput />
-        <Button clickHandler={()=>console.log('Button is working!')}>
-          <FilterListIcon style={{ color: '#ff5050', fontSize: '32px' }} />
-        </Button>
-      </Box>
-      <h1>Центри переливання крові</h1>
-      <ul>
-        {bloodCenters.map((center: IBloodDonationCenter, index: number) => (
-          < li key={center.id} >
-            <strong>{index + 1}.{center.name}</strong>
-          </li>
-        ))
-        }
-      </ul >
-      {/* <FlexBox justify="center" margin="25px 0 0 0">
+      <FlexBox direction="column" deskWidth="600px">
+        <Box display="flex" sx={{ padding: 0, marginBottom: '16px' }}>
+          <SearchInput />
+          {isMobile && <Button clickHandler={handleOpen}>
+            <FilterListIcon style={{ color: '#ff5050', fontSize: '32px' }} />
+          </Button>}
+        </Box>
+        <Text fontSize='24px' fontWeight='600'>Blood center nearby</Text>
+        <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text>
+        <ul>
+          {bloodCenters.map((center: IBloodDonationCenter, index: number) => (
+            < li key={center.id} >
+              <strong>{index + 1}.{center.name}</strong>
+            </li>
+          ))
+          }
+        </ul >
+        {/* <FlexBox justify="center" margin="25px 0 0 0">
         <PaginationContainer>
           <IconButton onClick={loadPrevious} disabled={currentPage === 1} style={{ padding: '6px 12px' }}>
             <ArrowBackIcon />Prev
@@ -115,6 +170,63 @@ const BloodCenters: React.FC = () => {
           </IconButton>
         </PaginationContainer>
       </FlexBox> */}
+      </FlexBox>
+      {/* <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        PaperProps={{
+          sx: {
+            width: '100%',
+            height: '250px',
+            borderRadius: '16px 16px 0 0',
+            // backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            position: 'fixed',
+            bottom: 0,
+            left: 0,
+            margin: 0,
+            maxWidth: 'none',
+            boxShadow: 'none'
+          },
+        }}
+        BackdropProps={{
+          style: {
+            backgroundColor: 'rgba(255, 255, 255, 0)'
+          },
+        }}
+      > */}
+      <CustomDialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+      >
+        <DialogContent>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              padding: '10px',
+            }}
+          >
+            <p>Filters modal</p>
+            <button
+              onClick={handleClose}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                padding: 0,
+                cursor: 'pointer',
+                outline: 'none',
+              }}
+            >
+              <CloseIcon />
+            </button>
+          </div>
+        </DialogContent>
+      </CustomDialog>
     </>
   );
 };

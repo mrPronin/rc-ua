@@ -1,5 +1,5 @@
 import styled  from 'styled-components';
-interface FlexBoxProps {
+interface IFlexBoxProps {
   justify?: string;
   direction?: string;
   align?: string;
@@ -13,10 +13,11 @@ interface FlexBoxProps {
   textAlign?: string;
   scrollY?: string;
   flex?: string;
+  deskWidth?: string;
 }
   // flex-shrink: 0;
 
-const FlexBox = styled.div<FlexBoxProps>`
+const FlexBox = styled.div<IFlexBoxProps>`
   display: flex;
   flex: ${({flex}) => flex ? flex : ''};
   justify-content ${ ({justify})=> justify ? justify : null};
@@ -32,5 +33,9 @@ const FlexBox = styled.div<FlexBoxProps>`
   box-sizing: border-box;
   text-align: ${({textAlign}) => textAlign ? textAlign : "left"};
   overflow-y: ${({scrollY}) => scrollY ? scrollY : "auto"};
+
+  @media (min-width:480px){
+width: ${({deskWidth})=>deskWidth ? deskWidth: ''}
+}
 `
 export default FlexBox;

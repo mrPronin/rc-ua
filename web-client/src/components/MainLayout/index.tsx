@@ -49,15 +49,34 @@ const MainLayout = ({ children }: IMainLayout) => {
                 display: 'flex',
                 flexDirection: 'column',
                 backgroundColor: "#eaeaed",
-                padding: '8px'
+                // padding: '8px'
             }}>
+                <FlexBox justify="space-between" align="center" backgroundColor="#ffffff" padding="12px 16px 0 16px" height="75px">
+                    <NavLinkLogo to="/"><img src={Logo} alt="Logo" /></NavLinkLogo>
+                    <Box sx={{ width: '100px', height: '40px' }}>
+                        <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label">Language</InputLabel>
+                            <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                style={{ height: '35px' }}
+                                value={lang}
+                                label="Language"
+                                onChange={handleChange}
+                            >
+                                <MenuItem value="1">En</MenuItem>
+                                <MenuItem value="2">UA</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Box>
+                </FlexBox>
                 <FlexBox direction="column" padding="16px 8px 8px 8px">
                     {children}
                 </FlexBox>
                 <BottomNavigation
                     sx={{
                         boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',
-                        borderRadius: '15px'
+                        // borderRadius: '15px'
                     }}>
                     <FlexBox justify="space-between">
                         {appRoutesMap.map((route) => (
@@ -82,19 +101,16 @@ const MainLayout = ({ children }: IMainLayout) => {
                         <Typography
                             variant="h6"
                             component="div"
-                            sx={{display: { sm: 'block' } }}
+                            sx={{ display: { sm: 'block' } }}
                         >
                             <NavLinkLogo to="/"><img src={Logo} alt="Logo" /></NavLinkLogo>
                         </Typography>
                         <FlexBox justify="space-between" width="360px">
-                                {appRoutesMap.map((route) => (
-                                        <NavLink to={route.to} className={pathname === route.to ? "active" : ""}>
-                                            {/* <FlexBox align="center"> */}
-                                                {/* <span>{route.icon}</span> */}
-                                                <span>{route.name}</span>
-                                            {/* </FlexBox> */}
-                                        </NavLink>
-                                ))}
+                            {appRoutesMap.map((route) => (
+                                <NavLink to={route.to} className={pathname === route.to ? "active" : ""}>
+                                    <span>{route.name}</span>
+                                </NavLink>
+                            ))}
                         </FlexBox>
                         <Box sx={{ width: '100px', height: '40px' }}>
                             <FormControl fullWidth>
@@ -114,9 +130,11 @@ const MainLayout = ({ children }: IMainLayout) => {
                         </Box>
                     </Toolbar>
                 </AppBar>
-                <FlexBox direction="column" padding="24px" width="100%">
+                <FlexBox direction="column" padding="24px" backgroundColor="#eaeaed" width="100%">
                     <Toolbar />
-                    {children}
+                    <FlexBox justify='center'>
+                        {children}
+                    </FlexBox>
                 </FlexBox>
             </FlexBox >
         ))
