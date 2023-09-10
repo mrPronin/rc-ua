@@ -13,24 +13,7 @@ border: none!important;
 }
 .MuiOutlinedInput-notchedOutline, .Mui-focused {
     border: none;
-    &:focus {
-        border: 1px solid #1976d2!important; /* Додаємо бордер при фокусі */
-      }
   }
-
-
-// .MuiOutlinedInput-input{
-//     height: 40px;
-//     padding: 0px;
-//     border: none;
-//     padding: 8px;
-//         }
-
-// .MuiInputLabel-root {
-// color:red
-// cursor: pointer;
-// }
-
 `
 
 export default InputSearchComponent;

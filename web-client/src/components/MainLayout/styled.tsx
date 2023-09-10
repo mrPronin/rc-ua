@@ -5,7 +5,7 @@ const NavLinkLogo = styled(NavLinkElement)`
   text-decoration: none;
   color: ${({ color }) => color ? color : '#ffffff'};
   font-size: 20px;
-
+  
   &:hover{
     color: #CDE1E8;
   }

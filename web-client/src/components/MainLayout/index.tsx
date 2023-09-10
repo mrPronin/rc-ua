@@ -1,36 +1,32 @@
-import { ReactNode, useState, useEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { NavLink, NavLinkLogo } from './styled';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import FlexBox from 'components/StyledComponents/FlexBox';
 import Paper from '@mui/material/Paper';
-import { appRoutesMap } from 'routes/appRotesMap';
+import { appRoutesMap } from 'routes/appRoutesMap';
 import { useLocation } from 'react-router-dom';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import Logo from 'assets/Logo.png';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import { observer } from 'mobx-react-lite';
+import settings from 'store/settings';
+import LangSelect from 'components/LanguageSelect';
+
 interface IMainLayout {
     children: ReactNode;
 }
 
-const MainLayout = ({ children }: IMainLayout) => {
+const MainLayout = observer(({ children }: IMainLayout) => {
+    const { isMobile } = settings;
     const { pathname } = useLocation();
-    const [isMobile, setIsMobile] = useState(false);
-    const [lang, setLang] = useState("1");
     useEffect(() => {
         if (window) {
             const checkIsMobile = () => {
-                setIsMobile(window.innerWidth <= 600);
+                settings.setIsMobile(window.innerWidth <= 600)
+                console.log(window.innerWidth <= 600, 'checkIsMobile')
             };
 
             window.addEventListener('resize', checkIsMobile);
-            checkIsMobile();
 
             return () => {
                 window.removeEventListener('resize', checkIsMobile);
@@ -38,9 +34,6 @@ const MainLayout = ({ children }: IMainLayout) => {
         }
     }, []);
 
-    const handleChange = (event: SelectChangeEvent) => {
-        setLang(event.target.value as string);
-    };
     return (
         isMobile ? (
             <Paper sx={{
@@ -49,35 +42,16 @@ const MainLayout = ({ children }: IMainLayout) => {
                 display: 'flex',
                 flexDirection: 'column',
                 backgroundColor: "#eaeaed",
-                // padding: '8px'
             }}>
                 <FlexBox justify="space-between" align="center" backgroundColor="#ffffff" padding="12px 16px 0 16px" height="75px">
                     <NavLinkLogo to="/"><img src={Logo} alt="Logo" /></NavLinkLogo>
-                    <Box sx={{ width: '100px', height: '40px' }}>
-                        <FormControl fullWidth>
-                            <InputLabel id="demo-simple-select-label">Language</InputLabel>
-                            <Select
-                                labelId="demo-simple-select-label"
-                                id="demo-simple-select"
-                                style={{ height: '35px' }}
-                                value={lang}
-                                label="Language"
-                                onChange={handleChange}
-                            >
-                                <MenuItem value="1">En</MenuItem>
-                                <MenuItem value="2">UA</MenuItem>
-                            </Select>
-                        </FormControl>
-                    </Box>
+                    <LangSelect style={{ height: '35px' }} />
                 </FlexBox>
                 <FlexBox direction="column" padding="16px 8px 8px 8px">
                     {children}
                 </FlexBox>
                 <BottomNavigation
-                    sx={{
-                        boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',
-                        // borderRadius: '15px'
-                    }}>
+                    sx={{ boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)' }}>
                     <FlexBox justify="space-between">
                         {appRoutesMap.map((route) => (
                             <NavLink to={route.to} key={route.name}>
@@ -95,39 +69,17 @@ const MainLayout = ({ children }: IMainLayout) => {
             </Paper>
         ) : (
             <FlexBox backgroundColor="white">
-                <CssBaseline />
                 <AppBar component="nav" style={{ backgroundColor: 'white' }}>
                     <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <Typography
-                            variant="h6"
-                            component="div"
-                            sx={{ display: { sm: 'block' } }}
-                        >
-                            <NavLinkLogo to="/"><img src={Logo} alt="Logo" /></NavLinkLogo>
-                        </Typography>
+                        <NavLinkLogo to="/"><img src={Logo} alt="Logo" style={{marginTop: '12px'}}/></NavLinkLogo>
                         <FlexBox justify="space-between" width="360px">
                             {appRoutesMap.map((route) => (
-                                <NavLink to={route.to} className={pathname === route.to ? "active" : ""}>
+                                <NavLink key={route.to} to={route.to} className={pathname === route.to ? "active" : ""}>
                                     <span>{route.name}</span>
                                 </NavLink>
                             ))}
                         </FlexBox>
-                        <Box sx={{ width: '100px', height: '40px' }}>
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">Language</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    style={{ height: '40px' }}
-                                    value={lang}
-                                    label="Language"
-                                    onChange={handleChange}
-                                >
-                                    <MenuItem value="1">En</MenuItem>
-                                    <MenuItem value="2">UA</MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Box>
+                        <LangSelect style={{ height: '40px' }} />
                     </Toolbar>
                 </AppBar>
                 <FlexBox direction="column" padding="24px" backgroundColor="#eaeaed" width="100%">
@@ -138,6 +90,6 @@ const MainLayout = ({ children }: IMainLayout) => {
                 </FlexBox>
             </FlexBox >
         ))
-};
+});
 
 export default MainLayout;

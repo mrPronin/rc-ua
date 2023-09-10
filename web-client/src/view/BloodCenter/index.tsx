@@ -24,6 +24,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import Slide, { SlideProps } from '@mui/material/Slide';
 // import { TransitionProps } from '@mui/material/transitions';
 import { styled } from '@mui/material/styles';
+import { observer } from 'mobx-react-lite';
+import settings from 'store/settings';
+
 const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
   function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -46,28 +49,14 @@ const CustomDialog = styled(Dialog)(()=> ({
     backgroundColor: 'rgba(255, 255, 255, 0)', // Зробили фон прозорим
   },
 }));
-const BloodCenters: React.FC = () => {
+const BloodCenters: React.FC = observer(() => {
+  const { isMobile } = settings;
+
   // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
   // const [pageInfo, setPageInfo] = useState<IPageInfo>();
   const [bloodCenters, setBloodCenters] = useState<IBloodDonationCenter[]>([]);
   // const [currentPage, setCurrentPage] = useState(1);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window) {
-      const checkIsMobile = () => {
-        setIsMobile(window.innerWidth <= 600);
-      };
-
-      window.addEventListener('resize', checkIsMobile);
-      checkIsMobile();
-
-      return () => {
-        window.removeEventListener('resize', checkIsMobile);
-      };
-    }
-  }, []);
 
   // useEffect(() => {
   //   if (data) {
@@ -229,6 +218,6 @@ const BloodCenters: React.FC = () => {
       </CustomDialog>
     </>
   );
-};
+});
 
 export default BloodCenters;

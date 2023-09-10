@@ -11,7 +11,8 @@ export default defineConfig({
       'view': '/src/view',
       'API': '/src/API',
       'interfaces': '/src/interfaces',
-      'assets': '/src/assets'
+      'assets': '/src/assets',
+      'store': '/src/store'
     },
   },
   plugins: [
@@ -37,5 +38,5 @@ export default defineConfig({
           },
         ],
       },
-    }),],
+    }),]
 })
