@@ -25,14 +25,14 @@ const FlexBox = styled.div<IFlexBoxProps>`
   align-items: ${({align}) => align ? align : null};
   width: ${({width}) => width ? width : "100%"};
   max-width: ${({maxWidth}) => maxWidth ? maxWidth : ""};
-  height: ${({height}) => height ? height : "100%"};
+  height: ${({height}) => height ? height : "100hv"};
   margin: ${({margin}) => margin ? margin : ""};
   padding: ${({padding}) => padding ? padding : ""};
   background-color: ${({backgroundColor}) => backgroundColor ? backgroundColor : ""};
   border-radius: ${({borderRadius}) => borderRadius ? borderRadius : ""};
   box-sizing: border-box;
   text-align: ${({textAlign}) => textAlign ? textAlign : "left"};
-  overflow-y: ${({scrollY}) => scrollY ? scrollY : "auto"};
+  overflow-y: ${({scrollY}) => scrollY ? scrollY : ""};
 
   @media (min-width:480px){
 width: ${({deskWidth})=>deskWidth ? deskWidth: ''}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { CardContainer, Card, LocationIcon, Badge } from './styled';
 import { useQuery } from '@apollo/client';
 import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
 import { IBloodDonationCenterConnection, /*IPageInfo,*/ IBloodDonationCenterEdge, IBloodDonationCenter } from 'interfaces/bloodDonationCenters';
@@ -22,11 +23,13 @@ import DialogContent from '@mui/material/DialogContent';
 // import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide, { SlideProps } from '@mui/material/Slide';
-// import { TransitionProps } from '@mui/material/transitions';
 import { styled } from '@mui/material/styles';
 import { observer } from 'mobx-react-lite';
 import settings from 'store/settings';
-
+import {bloodCentersData} from 'assets/data';
+// import Card from '@mui/material/Card';
+// import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
   function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -51,29 +54,30 @@ const CustomDialog = styled(Dialog)(()=> ({
 }));
 const BloodCenters: React.FC = observer(() => {
   const { isMobile } = settings;
-
+  const { data} = bloodCentersData;
+console.log(data, 'static data')
   // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
   // const [pageInfo, setPageInfo] = useState<IPageInfo>();
   const [bloodCenters, setBloodCenters] = useState<IBloodDonationCenter[]>([]);
   // const [currentPage, setCurrentPage] = useState(1);
 
-  // useEffect(() => {
-  //   if (data) {
-  //     initData(data);
-  //   }
-  // }, [data]);
+  useEffect(() => {
+    if (data) {
+      initData(data);
+    }
+  }, []);
 
-  // const initData = (data: IBloodDonationCenterConnection) => {
-  //   // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
-  //   const newEdges = data?.bloodDonationCenters?.edges;
-  //   const newBloodDonationCenters = newEdges?.map((obj: IBloodDonationCenterEdge) => {
-  //     const { node } = obj;
-  //     return { ...node };
-  //   });
-  //   setBloodCenters(newBloodDonationCenters);
-  // }
-  // console.log(bloodCenters, 'edges-bloodCenters')
+  const initData = (data: IBloodDonationCenterConnection) => {
+    // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
+    const newEdges = data?.bloodDonationCenters?.edges;
+    const newBloodDonationCenters = newEdges?.map((obj: IBloodDonationCenterEdge) => {
+      const { node } = obj;
+      return { ...node };
+    });
+    setBloodCenters(newBloodDonationCenters);
+  }
+  console.log(bloodCenters, 'edges-bloodCenters')
 
   // const loadNext = async () => {
   //   if (!pageInfo?.hasNextPage) return;
@@ -141,14 +145,18 @@ const BloodCenters: React.FC = observer(() => {
         </Box>
         <Text fontSize='24px' fontWeight='600'>Blood center nearby</Text>
         <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text>
-        <ul>
-          {bloodCenters.map((center: IBloodDonationCenter, index: number) => (
-            < li key={center.id} >
-              <strong>{index + 1}.{center.name}</strong>
-            </li>
+        <CardContainer>
+          {bloodCenters.map((center: IBloodDonationCenter) => (
+            <Card key={center.id}>
+              <FlexBox>
+              <LocationIcon />
+              <Text fontSize="16px" fontWeight="600" margin="0 0 0 16px">{center.name}</Text>
+              </FlexBox>
+              <Badge>{center.category}</Badge>
+            </Card>
           ))
           }
-        </ul >
+        </CardContainer >
         {/* <FlexBox justify="center" margin="25px 0 0 0">
         <PaginationContainer>
           <IconButton onClick={loadPrevious} disabled={currentPage === 1} style={{ padding: '6px 12px' }}>

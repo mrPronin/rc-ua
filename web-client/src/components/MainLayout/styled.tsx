@@ -5,16 +5,12 @@ const NavLinkLogo = styled(NavLinkElement)`
   text-decoration: none;
   color: ${({ color }) => color ? color : '#ffffff'};
   font-size: 20px;
-  
-  &:hover{
-    color: #CDE1E8;
-  }
 `
 const NavLink = styled(NavLinkLogo)`
   font-size: 16px;
-  color: #150000;
+  color: var(--dark-grey);
   &.active{
-    color: #ff5050;
+    color: var(--main-red-color);
   }
 `
 export {

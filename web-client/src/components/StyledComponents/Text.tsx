@@ -4,7 +4,7 @@ interface ITextProps{
     color?:string;
     fontSize?:string;
     fontWeight?:string;
-    marginBottom?:string;
+    margin?:string;
     textDecoration?:string;
     textAlign?:string;
 
@@ -15,7 +15,7 @@ font-family: ${({fontFamily}) => fontFamily ? fontFamily : 'Roboto'};
 color: ${({color}) => color ? color : "#000"}; 
 font-size: ${({fontSize}) => fontSize ? fontSize : "20px"};
 font-weight: ${({fontWeight}) => fontWeight ? fontWeight : "400"};
-margin-bottom: ${({marginBottom}) => marginBottom ? marginBottom : ""};
+margin: ${({margin}) => margin ? margin : ""};
 text-transform: ${({textDecoration}) => textDecoration && textDecoration}; 
 text-align: ${({textAlign}) => textAlign ? textAlign : "left"}; 
 white-space: normal;
