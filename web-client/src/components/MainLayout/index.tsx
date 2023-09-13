@@ -1,118 +1,95 @@
-import React, { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { NavLink, NavLinkLogo } from './styled';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-
-import { appRoutesMap } from 'routes/appRotesMap';
+import FlexBox from 'components/StyledComponents/FlexBox';
+import Paper from '@mui/material/Paper';
+import { appRoutesMap } from 'routes/appRoutesMap';
 import { useLocation } from 'react-router-dom';
+import { BottomNavigation, BottomNavigationAction } from '@mui/material';
+import Logo from 'assets/Logo.png';
+import { observer } from 'mobx-react-lite';
+import settings from 'store/settings';
+import LangSelect from 'components/LanguageSelect';
 
 interface IMainLayout {
     children: ReactNode;
-    window?: () => Window;
 }
 
-const drawerWidth = 240;
+const MainLayout = observer(({ children }: IMainLayout) => {
+    const { isMobile } = settings;
+    const { pathname } = useLocation();
+    useEffect(() => {
+        if (window) {
+            const checkIsMobile = () => {
+                settings.setIsMobile(window.innerWidth <= 600)
+                console.log(window.innerWidth <= 600, 'checkIsMobile')
+            };
 
-const MainLayout = ({ children, ...props }: IMainLayout) => {
-    let { pathname } = useLocation();
-    const { window } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+            window.addEventListener('resize', checkIsMobile);
 
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState);
-    };
-
-    const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                RC-UA
-            </Typography>
-            <Divider />
-            <List>
-                {appRoutesMap.map((route) => (
-                    <ListItem key={route.to} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
-                            <NavLink
-                                to={route.to}
-                                color="#1976d2"
-                                className={pathname === route.to ? "active" : ""}>{route.name}</NavLink>
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
-        </Box>
-    );
-
-    const container = window !== undefined ? () => window().document.body : undefined;
+            return () => {
+                window.removeEventListener('resize', checkIsMobile);
+            };
+        }
+    }, []);
 
     return (
-        <Box sx={{ display: 'flex' }}>
-            <CssBaseline />
-            <AppBar component="nav">
-                <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ flexGrow: 1, display: { sm: 'block' } }}
-                    >
-                        <NavLinkLogo to="/">RC-UA</NavLinkLogo>
-                    </Typography>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        <Grid container spacing={2}>
+        isMobile ? (
+            <Paper sx={{
+                position: 'fixed', top: 0, bottom: 0, left: 0, right: 0,
+                minHeight: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                backgroundColor: "#eaeaed",
+            }}>
+                <FlexBox justify="space-between" align="center" backgroundColor="#ffffff" padding="12px 16px 0 16px" height="75px">
+                    <NavLinkLogo to="/"><img src={Logo} alt="Logo" /></NavLinkLogo>
+                    <LangSelect style={{ height: '35px' }} />
+                </FlexBox>
+                <FlexBox direction="column" padding="16px 8px 8px 8px">
+                    {children}
+                </FlexBox>
+                <BottomNavigation
+                    sx={{ boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)' }}>
+                    <FlexBox justify="space-between">
+                        {appRoutesMap.map((route) => (
+                            <NavLink to={route.to} key={route.name}>
+                                <BottomNavigationAction
+                                    label={route.name}
+                                    icon={route.icon}
+                                    sx={{
+                                        color: pathname === route.to ? '#ff5050' : 'grey',
+                                    }}
+                                />
+                            </NavLink>
+                        ))}
+                    </FlexBox>
+                </BottomNavigation>
+            </Paper>
+        ) : (
+            <FlexBox backgroundColor="white">
+                <AppBar component="nav" style={{ backgroundColor: 'white' }}>
+                    <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <NavLinkLogo to="/"><img src={Logo} alt="Logo" style={{marginTop: '12px'}}/></NavLinkLogo>
+                        <FlexBox justify="space-between" width="360px">
                             {appRoutesMap.map((route) => (
-                                <Grid item key={route.name}>
-                                    <NavLink to={route.to} className={pathname === route.to ? "active" : ""}>
-                                        {route.name}
-                                    </NavLink>
-                                </Grid>
+                                <NavLink key={route.to} to={route.to} className={pathname === route.to ? "active" : ""}>
+                                    <span>{route.name}</span>
+                                </NavLink>
                             ))}
-                        </Grid>
-                    </Box>
-                </Toolbar>
-            </AppBar>
-            <Box component="nav">
-                <Drawer
-                    container={container}
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
-                    sx={{
-                        display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                    }}
-                >
-                    {drawer}
-                </Drawer>
-            </Box>
-            <Box component="main" sx={{ p: 3 }}>
-                <Toolbar />
-                {children}
-            </Box>
-        </Box>
-    )
-};
+                        </FlexBox>
+                        <LangSelect style={{ height: '40px' }} />
+                    </Toolbar>
+                </AppBar>
+                <FlexBox direction="column" padding="24px" backgroundColor="#eaeaed" width="100%">
+                    <Toolbar />
+                    <FlexBox justify='center'>
+                        {children}
+                    </FlexBox>
+                </FlexBox>
+            </FlexBox >
+        ))
+});
 
 export default MainLayout;

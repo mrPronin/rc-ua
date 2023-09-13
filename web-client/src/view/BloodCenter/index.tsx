@@ -1,7 +1,223 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useQuery } from '@apollo/client';
+import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
+import { IBloodDonationCenterConnection, /*IPageInfo,*/ IBloodDonationCenterEdge, IBloodDonationCenter } from 'interfaces/bloodDonationCenters';
+// import Pagination from '@mui/material/Pagination';
+import Button from 'components/Button';
+import Box from '@mui/material/Box';
+import FlexBox from 'components/StyledComponents/FlexBox';
+import Text from 'components/StyledComponents/Text';
+// import CircularProgress from '@mui/material/CircularProgress';
+import SearchInput from 'components/SearchInput';
+// import IconButton from '@mui/material/IconButton';
+// import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+// import PaginationContainer from 'components/StyledComponents/PaginationContainer';
+// import Button from '@mui/material/Button';
+// import Menu from '@mui/material/Menu';
+// import MenuItem from '@mui/material/MenuItem';
+import FilterListIcon from '@mui/icons-material/FilterList';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+// import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+import Slide, { SlideProps } from '@mui/material/Slide';
+// import { TransitionProps } from '@mui/material/transitions';
+import { styled } from '@mui/material/styles';
+import { observer } from 'mobx-react-lite';
+import settings from 'store/settings';
 
-const BloodCenters: React.FC = () => {
-  return <h1>Центри переливання крові</h1>;
-};
+const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
+  function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+  },
+);
+const CustomDialog = styled(Dialog)(()=> ({
+  '& .MuiDialog-paper': {
+    width: '100%',
+    height: '250px',
+    borderRadius: '16px 16px 0 0',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    margin: 0,
+    maxWidth: 'none',
+    boxShadow: 'none',
+  },
+  '& .MuiBackdrop-root': {
+    backgroundColor: 'rgba(255, 255, 255, 0)', // Зробили фон прозорим
+  },
+}));
+const BloodCenters: React.FC = observer(() => {
+  const { isMobile } = settings;
+
+  // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
+  // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
+  // const [pageInfo, setPageInfo] = useState<IPageInfo>();
+  const [bloodCenters, setBloodCenters] = useState<IBloodDonationCenter[]>([]);
+  // const [currentPage, setCurrentPage] = useState(1);
+
+  // useEffect(() => {
+  //   if (data) {
+  //     initData(data);
+  //   }
+  // }, [data]);
+
+  // const initData = (data: IBloodDonationCenterConnection) => {
+  //   // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
+  //   const newEdges = data?.bloodDonationCenters?.edges;
+  //   const newBloodDonationCenters = newEdges?.map((obj: IBloodDonationCenterEdge) => {
+  //     const { node } = obj;
+  //     return { ...node };
+  //   });
+  //   setBloodCenters(newBloodDonationCenters);
+  // }
+  // console.log(bloodCenters, 'edges-bloodCenters')
+
+  // const loadNext = async () => {
+  //   if (!pageInfo?.hasNextPage) return;
+
+  //   const after = pageInfo?.endCursor;
+  //   const first = 5;
+
+  //   try {
+  //     const { data } = await fetchMore({
+  //       variables: { first, after },
+  //       updateQuery: (prev, { fetchMoreResult }) => {
+  //         if (!fetchMoreResult) return prev;
+  //         return fetchMoreResult
+  //       },
+  //     });
+  //     initData(data);
+  //     setCurrentPage(currentPage + 1)
+  //   } catch (error) {
+  //     console.error('Error while fetching more data:', error);
+  //   }
+  // };
+
+  // const loadPrevious = async () => {
+  //   if (!pageInfo?.hasPreviousPage) return;
+
+  //   const before = pageInfo?.startCursor;
+  //   const last = 5;
+  //   try {
+  //     const { data } = await fetchMore({
+  //       variables: { first: undefined, last, before },
+  //       updateQuery: (prev, { fetchMoreResult }) => {
+  //         if (!fetchMoreResult) return prev;
+  //         return fetchMoreResult;
+  //       },
+  //     });
+  //     initData(data);
+  //     setCurrentPage(currentPage - 1)
+  //   } catch (error) {
+  //     console.error('Error while fetching more data:', error);
+  //   }
+  // };
+
+  // if (loading) return (<FlexBox margin="25px 0" justify="center">
+  //   <CircularProgress />
+  // </FlexBox>);
+
+  // if (error) return <p>Error : {error.message}</p>;
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  return (
+    <>
+      <FlexBox direction="column" deskWidth="600px">
+        <Box display="flex" sx={{ padding: 0, marginBottom: '16px' }}>
+          <SearchInput />
+          {isMobile && <Button clickHandler={handleOpen}>
+            <FilterListIcon style={{ color: '#ff5050', fontSize: '32px' }} />
+          </Button>}
+        </Box>
+        <Text fontSize='24px' fontWeight='600'>Blood center nearby</Text>
+        <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text>
+        <ul>
+          {bloodCenters.map((center: IBloodDonationCenter, index: number) => (
+            < li key={center.id} >
+              <strong>{index + 1}.{center.name}</strong>
+            </li>
+          ))
+          }
+        </ul >
+        {/* <FlexBox justify="center" margin="25px 0 0 0">
+        <PaginationContainer>
+          <IconButton onClick={loadPrevious} disabled={currentPage === 1} style={{ padding: '6px 12px' }}>
+            <ArrowBackIcon />Prev
+          </IconButton>
+          <IconButton onClick={loadNext} disabled={currentPage === 4}>
+            Next<ArrowForwardIcon />
+          </IconButton>
+        </PaginationContainer>
+      </FlexBox> */}
+      </FlexBox>
+      {/* <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        PaperProps={{
+          sx: {
+            width: '100%',
+            height: '250px',
+            borderRadius: '16px 16px 0 0',
+            // backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            position: 'fixed',
+            bottom: 0,
+            left: 0,
+            margin: 0,
+            maxWidth: 'none',
+            boxShadow: 'none'
+          },
+        }}
+        BackdropProps={{
+          style: {
+            backgroundColor: 'rgba(255, 255, 255, 0)'
+          },
+        }}
+      > */}
+      <CustomDialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+      >
+        <DialogContent>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              padding: '10px',
+            }}
+          >
+            <p>Filters modal</p>
+            <button
+              onClick={handleClose}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                padding: 0,
+                cursor: 'pointer',
+                outline: 'none',
+              }}
+            >
+              <CloseIcon />
+            </button>
+          </div>
+        </DialogContent>
+      </CustomDialog>
+    </>
+  );
+});
 
 export default BloodCenters;
