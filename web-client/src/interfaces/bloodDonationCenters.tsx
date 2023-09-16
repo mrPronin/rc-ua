@@ -33,9 +33,13 @@ interface Contacts {
   landlinePhone: string;
   website: string;
 }
-
+interface IWeekDay {
+  Name: string;
+  ShortName: string;
+  weekDayNumber: number;
+}
 interface WorkScheduleItem {
-  weekDay: string;
+  weekDay: IWeekDay;
   startTimeBeforeLunchBreak: string;
   endTimeBeforeLunchBreak: string | null;
   startTimeAfterLunchBreak: string | null;

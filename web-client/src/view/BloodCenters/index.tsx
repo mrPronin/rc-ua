@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { CardContainer, Card, LocationIcon, Badge } from './styled';
-import { useQuery } from '@apollo/client';
-import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
+import { useNavigate } from 'react-router-dom';
+// import { useQuery } from '@apollo/client';
+// import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
 import { IBloodDonationCenterConnection, /*IPageInfo,*/ IBloodDonationCenterEdge, IBloodDonationCenter } from 'interfaces/bloodDonationCenters';
 // import Pagination from '@mui/material/Pagination';
 import Button from 'components/Button';
@@ -19,23 +19,24 @@ import SearchInput from 'components/SearchInput';
 // import MenuItem from '@mui/material/MenuItem';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import Dialog from '@mui/material/Dialog';
+import { styled } from '@mui/material/styles';
 import DialogContent from '@mui/material/DialogContent';
 // import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide, { SlideProps } from '@mui/material/Slide';
-import { styled } from '@mui/material/styles';
 import { observer } from 'mobx-react-lite';
 import settings from 'store/settings';
-import {bloodCentersData} from 'assets/data';
-// import Card from '@mui/material/Card';
-// import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
+import { bloodCentersData } from 'assets/data';
+import { transformFirstLetter } from 'helpers/formatWord';
+import { CardContainer, Card, LocationIcon, Badge } from './styled';
+import bloodCentersStore from 'store/bloodCenters';
+
 const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
   function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   },
 );
-const CustomDialog = styled(Dialog)(()=> ({
+const CustomDialog = styled(Dialog)(() => ({
   '& .MuiDialog-paper': {
     width: '100%',
     height: '250px',
@@ -49,13 +50,14 @@ const CustomDialog = styled(Dialog)(()=> ({
     boxShadow: 'none',
   },
   '& .MuiBackdrop-root': {
-    backgroundColor: 'rgba(255, 255, 255, 0)', // Зробили фон прозорим
+    backgroundColor: 'rgba(255, 255, 255, 0)'
   },
 }));
 const BloodCenters: React.FC = observer(() => {
   const { isMobile } = settings;
-  const { data} = bloodCentersData;
-console.log(data, 'static data')
+  const { data } = bloodCentersData;
+  console.log(data, 'static data')
+  const navigate = useNavigate();
   // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
   // const [pageInfo, setPageInfo] = useState<IPageInfo>();
@@ -76,6 +78,7 @@ console.log(data, 'static data')
       return { ...node };
     });
     setBloodCenters(newBloodDonationCenters);
+    bloodCentersStore.setBloodCenters(newBloodDonationCenters);
   }
   console.log(bloodCenters, 'edges-bloodCenters')
 
@@ -147,12 +150,16 @@ console.log(data, 'static data')
         <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text>
         <CardContainer>
           {bloodCenters.map((center: IBloodDonationCenter) => (
-            <Card key={center.id}>
-              <FlexBox>
-              <LocationIcon />
-              <Text fontSize="16px" fontWeight="600" margin="0 0 0 16px">{center.name}</Text>
+            <Card key={center.id} onClick={()=>navigate(`center/${center.id}`)}>
+              <FlexBox align="center">
+                <LocationIcon />
+                <FlexBox direction="column"  margin="0 0 0 16px">
+                  <Text fontSize="16px" fontWeight="600">{center.name}</Text>
+                  <Text fontSize="14px" >{center.address.street}, {center.address.city}</Text>
+                  <Text fontSize="14px" >{center.address.postalCode}, {center.address.region}</Text>
+                </FlexBox>
               </FlexBox>
-              <Badge>{center.category}</Badge>
+              <Badge>{transformFirstLetter(center.category)}</Badge>
             </Card>
           ))
           }

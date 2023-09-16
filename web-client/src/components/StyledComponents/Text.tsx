@@ -1,6 +1,7 @@
 import styled from "styled-components";
 interface ITextProps{
     fontFamily?: string;
+    width?: string;
     color?:string;
     fontSize?:string;
     fontWeight?:string;
@@ -12,8 +13,9 @@ interface ITextProps{
 export const Text = styled.span<ITextProps>`
 display: block;
 font-family: ${({fontFamily}) => fontFamily ? fontFamily : 'Roboto'};
+width: ${({width}) => width ? width : ""}; 
 color: ${({color}) => color ? color : "#000"}; 
-font-size: ${({fontSize}) => fontSize ? fontSize : "20px"};
+font-size: ${({fontSize}) => fontSize ? fontSize : "16px"};
 font-weight: ${({fontWeight}) => fontWeight ? fontWeight : "400"};
 margin: ${({margin}) => margin ? margin : ""};
 text-transform: ${({textDecoration}) => textDecoration && textDecoration}; 

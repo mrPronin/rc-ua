@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-// import Card from '@mui/material/Card';
-const Card = styled.div`
+interface ICardProps {
+  direction?: string;
+}
+const Card = styled.div<ICardProps>`
   display: flex;
   justify-content:space-between;
   align-items: center;
+  flex-direction: ${({direction}) => direction ? direction : null};
   background-color: var(--white-color);
   margin-top: 16px;
   padding: 16px;
   border-radius: 10px;
-  &::last-child{
-    margin-bottom: 16px;
-  }
+  cursor: pointer;
 `
 const CardContainer = styled.div`
   display: flex;
@@ -30,4 +31,5 @@ const Badge = styled.div`
   border-radius 5px;
   font-size: 12px;
 `
+
 export { CardContainer, Card, LocationIcon, Badge } ;

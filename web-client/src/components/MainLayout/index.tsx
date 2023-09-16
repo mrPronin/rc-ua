@@ -37,7 +37,7 @@ const MainLayout = observer(({ children }: IMainLayout) => {
     return (
         isMobile ? (
             <Paper sx={{
-                position: 'fixed', 
+                position: 'fixed',
                 top: 0, bottom: 0, left: 0, right: 0,
                 minHeight: '100vh',
                 display: 'flex',
@@ -72,7 +72,7 @@ const MainLayout = observer(({ children }: IMainLayout) => {
             <FlexBox backgroundColor="var(--white-color)">
                 <AppBar component="nav" style={{ backgroundColor: 'var(--white-color)' }}>
                     <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <NavLinkLogo to="/"><img src={Logo} alt="Logo" style={{marginTop: '12px'}}/></NavLinkLogo>
+                        <NavLinkLogo to="/"><img src={Logo} alt="Logo" style={{ marginTop: '12px' }} /></NavLinkLogo>
                         <FlexBox justify="space-between" width="360px">
                             {appRoutesMap.map((route) => (
                                 <NavLink key={route.to} to={route.to} className={pathname === route.to ? "active" : ""}>
@@ -83,9 +83,10 @@ const MainLayout = observer(({ children }: IMainLayout) => {
                         <LangSelect style={{ height: '40px' }} />
                     </Toolbar>
                 </AppBar>
-                <FlexBox direction="column" height="100vh">
+                <FlexBox direction="column">
                     <Toolbar />
-                    <FlexBox justify='center' backgroundColor="var(--main-background-color)" width="100%">
+                    <FlexBox justify='center' backgroundColor="var(--main-background-color)"
+                        width="100%" height="100vh" padding='24px 0 0 0'>
                         {children}
                     </FlexBox>
                 </FlexBox>

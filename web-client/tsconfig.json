@@ -8,7 +8,8 @@
       "API/*": ["src/API/*"],
       "interfaces/*": ["src/interfaces/*"],
       "assets/*": ["src/assets/*"],
-      "store/*": ["src/store/*"]
+      "store/*": ["src/store/*"],
+      "helpers/*": ["src/helpers/*"]
     },
     "target": "ES2020",
     "useDefineForClassFields": true,
