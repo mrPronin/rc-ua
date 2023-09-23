@@ -47,7 +47,7 @@ interface WorkScheduleItem {
 }
 
 export interface IBloodDonationCenter {
-  address: Address;
+  address: Address | undefined;
   category: string;
   contacts: Contacts;
   createdAt: string;
