@@ -3,6 +3,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 interface ICardProps {
   direction?: string;
+  cursor?: string;
 }
 const Card = styled.div<ICardProps>`
   display: flex;
@@ -13,7 +14,7 @@ const Card = styled.div<ICardProps>`
   margin-top: 16px;
   padding: 16px;
   border-radius: 10px;
-  cursor: pointer;
+  cursor: ${({cursor}) => cursor ? cursor : "default"};
 `
 const CardContainer = styled.div`
   display: flex;

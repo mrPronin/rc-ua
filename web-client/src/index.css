@@ -2,10 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 14px;
   width: 100%;
   min-height: 100vh;
   /* color-scheme: light dark; */
-  color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +15,8 @@
 
   --main-background-color: #eaeaed;
   --main-red-color: #ff5050;
-  --dark-grey: #2e2d32;
+  --main-text-color: #2e2d32;
+  --header-text-color: #150000;
   --grey-hover: gray;
   --white-color: #fff;
   --violet-color:#8952d1;
@@ -27,6 +28,7 @@ html, body {
   width: 100%;
   min-height: 100vh;
   background-color: #eaeaed;
+  color: #2e2d32;
 }
 #root{
   width: 100%;

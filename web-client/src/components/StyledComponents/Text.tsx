@@ -9,13 +9,14 @@ interface ITextProps{
     textDecoration?:string;
     textAlign?:string;
     hoverColor?:string;
+    cursor?:string;
 }
 export const Text = styled.span<ITextProps>`
   display: block;
   font-family: ${({fontFamily}) => fontFamily ? fontFamily : 'Roboto'};
   width: ${({width}) => width ? width : ""}; 
-  color: ${({color}) => color ? color : "#000"}; 
-  font-size: ${({fontSize}) => fontSize ? fontSize : "16px"};
+  color: ${({color}) => color ? color : "var(--main-text-color)"}; 
+  font-size: ${({fontSize}) => fontSize ? fontSize : "14px"};
   font-weight: ${({fontWeight}) => fontWeight ? fontWeight : "400"};
   margin: ${({margin}) => margin ? margin : ""};
   text-decoration: ${({textDecoration}) => textDecoration && textDecoration}; 
@@ -24,7 +25,7 @@ export const Text = styled.span<ITextProps>`
 
   &:hover{
     color: ${({hoverColor}) => hoverColor ? hoverColor : ""}; 
-    cursor: pointer;
+    cursor: ${({cursor}) => cursor ? cursor : "default"};
   }
 `
 export default Text

@@ -60,7 +60,7 @@ const MainLayout = observer(({ children }: IMainLayout) => {
                                     label={route.name}
                                     icon={route.icon}
                                     sx={{
-                                        color: pathname === route.to ? 'var(--main-red-color)' : 'var(--dark-grey)',
+                                        color: pathname === route.to ? 'var(--main-red-color)' : 'var(--main-text-color)',
                                     }}
                                 />
                             </NavLink>

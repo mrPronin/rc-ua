@@ -150,13 +150,13 @@ const BloodCenters: React.FC = observer(() => {
         <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text>
         <CardContainer>
           {bloodCenters.map((center: IBloodDonationCenter) => (
-            <Card key={center.id} onClick={()=>navigate(`center/${center.id}`)}>
+            <Card key={center.id} onClick={()=>navigate(`center/${center.id}`)} cursor="pointer">
               <FlexBox align="center">
                 <LocationIcon />
                 <FlexBox direction="column"  margin="0 0 0 16px">
-                  <Text fontSize="16px" fontWeight="600">{center.name}</Text>
-                  <Text fontSize="14px" >{center?.address?.street}, {center?.address?.city}</Text>
-                  <Text fontSize="14px" >{center?.address?.postalCode}, {center?.address?.region}</Text>
+                  <Text color="var(--header-text-color)" fontWeight="600" cursor="pointer">{center.name}</Text>
+                  <Text color="var(--header-text-color)" cursor="pointer">{center?.address?.street}, {center?.address?.city}</Text>
+                  <Text color="var(--header-text-color)" cursor="pointer">{center?.address?.postalCode}, {center?.address?.region}</Text>
                 </FlexBox>
               </FlexBox>
               <Badge>{transformFirstLetter(center.category)}</Badge>
