@@ -6,6 +6,7 @@ const NavLinkLogo = styled(NavLinkElement)`
   font-size: 20px;
 `
 const NavLink = styled(NavLinkLogo)`
+  font-family: 'Manrope';
   font-size: 16px;
   color: var(--header-text-color);
   &.active{

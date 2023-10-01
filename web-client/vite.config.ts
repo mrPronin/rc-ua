@@ -13,7 +13,8 @@ export default defineConfig({
       'interfaces': '/src/interfaces',
       'assets': '/src/assets',
       'store': '/src/store',
-      'helpers': '/src/helpers'
+      'helpers': '/src/helpers',
+      'fonts': '/src/fonts'
     },
   },
   plugins: [

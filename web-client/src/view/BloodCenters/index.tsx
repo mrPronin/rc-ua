@@ -155,8 +155,8 @@ const BloodCenters: React.FC = observer(() => {
                 <LocationIcon />
                 <FlexBox direction="column"  margin="0 0 0 16px">
                   <Text color="var(--header-text-color)" fontWeight="600" cursor="pointer">{center.name}</Text>
-                  <Text color="var(--header-text-color)" cursor="pointer">{center?.address?.street}, {center?.address?.city}</Text>
-                  <Text color="var(--header-text-color)" cursor="pointer">{center?.address?.postalCode}, {center?.address?.region}</Text>
+                  <Text color="var(--header-text-color)" fontSize="12px" cursor="pointer">{center?.address?.street}, {center?.address?.city}</Text>
+                  <Text color="var(--header-text-color)" fontSize="12px" cursor="pointer">{center?.address?.postalCode}, {center?.address?.region}</Text>
                 </FlexBox>
               </FlexBox>
               <Badge>{transformFirstLetter(center.category)}</Badge>

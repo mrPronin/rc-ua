@@ -1,11 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Manrope';
   line-height: 1.5;
   font-weight: 400;
   font-size: 14px;
   width: 100%;
   min-height: 100vh;
-  /* color-scheme: light dark; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,15 +23,16 @@
 }
 
 html, body {
+  font-family: 'Manrope';
   margin: 0;
   width: 100%;
   min-height: 100vh;
   background-color: #eaeaed;
-  color: #2e2d32;
 }
 #root{
   width: 100%;
   min-height: 100vh;
+  color: var(--main-text-color)!important;
 }
 
 

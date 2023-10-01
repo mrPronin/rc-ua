@@ -27,10 +27,13 @@ const LocationIcon = styled(LocationOnIcon)`
   color: var(--main-red-color)
 `
 const Badge = styled.div`
+  font-family:'Manrope';
   background-color: var(--main-background-color);
   padding: 6px 12px;
-  border-radius 5px;
+  border-radius: 5px;
   font-size: 12px;
+  font-weight: 600;
+  height: fit-content;
 `
 
 export { CardContainer, Card, LocationIcon, Badge } ;
