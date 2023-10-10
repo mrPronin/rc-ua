@@ -2,28 +2,25 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { IBloodDonationCenter } from 'interfaces/bloodDonationCenters';
-import { transformFirstLetter } from 'helpers/formatWord';
 import { Card, LocationIcon, Badge } from './../styled';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Link from '@mui/material/Link';
 import FlexBox from 'components/StyledComponents/FlexBox';
 import Text from 'components/StyledComponents/Text';
 import bloodCentersStore from 'store/bloodCenters';
-// import FileCopyIcon from '@mui/icons-material/FileCopy';
 import PhoneIcon from '@mui/icons-material/Phone';
-// import MailIcon from '@mui/icons-material/Mail';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import PublicIcon from '@mui/icons-material/Public';
-// import Link from '@mui/material/Link';
 import Link from 'components/StyledComponents/Link';
 import { CopyIcon } from 'components/Icons';
 import CircularProgress from '@mui/material/CircularProgress';
+
 interface ICopied {
     address: boolean;
     cellPhone: boolean;
     landlinePhone: boolean;
     email: boolean;
 }
+
 const CenterDetails: React.FC = () => {
     const { bloodCenters, bloodCenter } = bloodCentersStore;
     console.log(bloodCenter, 'bloodCenter in Detail')
@@ -106,7 +103,7 @@ const CenterDetails: React.FC = () => {
                 <FlexBox direction="column">
                     <FlexBox justify="space-between" align="center">
                         <Text margin="16px 0" fontWeight="500">Work hours</Text>
-                        {centerObj?.category && <Badge>{transformFirstLetter(centerObj?.category)}</Badge>}
+                        {centerObj?.category && <Badge>{centerObj?.category}</Badge>}
                     </FlexBox>
                     {centerObj?.workSchedule?.map((item, index) =>
                         <FlexBox key={index}>

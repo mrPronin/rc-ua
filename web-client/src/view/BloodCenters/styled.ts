@@ -34,6 +34,11 @@ const Badge = styled.div`
   font-size: 12px;
   font-weight: 600;
   height: fit-content;
+  text-transform: lowercase;
+  
+  &:first-letter {
+    text-transform: uppercase;
+  }
 `
 
 export { CardContainer, Card, LocationIcon, Badge } ;
