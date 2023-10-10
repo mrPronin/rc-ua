@@ -33,9 +33,13 @@ interface Contacts {
   landlinePhone: string;
   website: string;
 }
-
+interface IWeekDay {
+  Name: string;
+  ShortName: string;
+  weekDayNumber: number;
+}
 interface WorkScheduleItem {
-  weekDay: string;
+  weekDay: IWeekDay;
   startTimeBeforeLunchBreak: string;
   endTimeBeforeLunchBreak: string | null;
   startTimeAfterLunchBreak: string | null;
@@ -43,7 +47,7 @@ interface WorkScheduleItem {
 }
 
 export interface IBloodDonationCenter {
-  address: Address;
+  address: Address | undefined;
   category: string;
   contacts: Contacts;
   createdAt: string;

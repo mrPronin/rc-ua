@@ -12,7 +12,8 @@ export default defineConfig({
       'API': '/src/API',
       'interfaces': '/src/interfaces',
       'assets': '/src/assets',
-      'store': '/src/store'
+      'store': '/src/store',
+      'helpers': '/src/helpers'
     },
   },
   plugins: [
