@@ -5,6 +5,7 @@ import { IBloodDonationCenter } from 'interfaces/bloodDonationCenters';
 import { Card, LocationIcon, Badge } from './../styled';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import FlexBox from 'components/StyledComponents/FlexBox';
+import Spinner from 'components/Spinner';
 import Text from 'components/StyledComponents/Text';
 import bloodCentersStore from 'store/bloodCenters';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -12,7 +13,8 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import PublicIcon from '@mui/icons-material/Public';
 import Link from 'components/StyledComponents/Link';
 import { CopyIcon } from 'components/Icons';
-import CircularProgress from '@mui/material/CircularProgress';
+import { Wrapper as GoogleMapWrapper, Status } from "@googlemaps/react-wrapper";
+import GoogleMap from './GoogleMap';
 
 interface ICopied {
     address: boolean;
@@ -63,12 +65,19 @@ const CenterDetails: React.FC = () => {
     };
 
     if (isLoading) {
-        return (
-            <FlexBox margin="50px 0" justify="center">
-                <CircularProgress />
-            </FlexBox>)
+        return <Spinner />
     }
-    // console.log(centerObj, 'centerObj')
+    const render = (status: Status) => {
+        switch (status) {
+            case Status.LOADING:
+                return <Spinner/>;
+            case Status.FAILURE:
+                return <div>Error</div>;
+            case Status.SUCCESS:
+                return <GoogleMap center={{ lat: Number(centerObj?.address?.latitude), lng: Number(centerObj?.address?.longitude) }} zoom={18} />;
+        }
+    };
+    // console.log(centerObj, import.meta.env, 'centerObj')
     return (
         <FlexBox direction="column" deskWidth="600px">
             <FlexBox margin="16px 0 0 0">
@@ -88,7 +97,7 @@ const CenterDetails: React.FC = () => {
                 <Text color="var(--header-text-color)" fontSize="20px" fontWeight="600">{centerObj?.name}</Text>
             </FlexBox>
             <Card direction="column">
-                <FlexBox align="center">
+                <FlexBox align="center" margin="0 0 16px 0">
                     <LocationIcon />
                     <FlexBox direction="column" margin="0 0 0 16px">
                         <Text color="var(--header-text-color)">{centerObj?.address?.street}, {centerObj?.address?.city}</Text>
@@ -100,7 +109,10 @@ const CenterDetails: React.FC = () => {
                         text={[centerObj?.address?.street, centerObj?.address?.city, centerObj?.address?.postalCode, centerObj?.address?.region].join(',')}
                     />
                 </FlexBox>
-                <FlexBox direction="column">
+
+                <GoogleMapWrapper apiKey={import.meta.env.VITE_GOOGLE_MAP_KEY} render={render} />
+                
+                <FlexBox direction="column" margin="16px 0 0 0">
                     <FlexBox justify="space-between" align="center">
                         <Text margin="16px 0" fontWeight="500">Work hours</Text>
                         {centerObj?.category && <Badge>{centerObj?.category}</Badge>}
