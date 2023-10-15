@@ -27,7 +27,6 @@ import Slide, { SlideProps } from '@mui/material/Slide';
 import { observer } from 'mobx-react-lite';
 import settings from 'store/settings';
 import { bloodCentersData } from 'assets/data';
-import { transformFirstLetter } from 'helpers/formatWord';
 import { CardContainer, Card, LocationIcon, Badge } from './styled';
 import bloodCentersStore from 'store/bloodCenters';
 
@@ -155,11 +154,12 @@ const BloodCenters: React.FC = observer(() => {
                 <LocationIcon />
                 <FlexBox direction="column"  margin="0 0 0 16px">
                   <Text color="var(--header-text-color)" fontWeight="600" cursor="pointer">{center.name}</Text>
-                  <Text color="var(--header-text-color)" cursor="pointer">{center?.address?.street}, {center?.address?.city}</Text>
-                  <Text color="var(--header-text-color)" cursor="pointer">{center?.address?.postalCode}, {center?.address?.region}</Text>
+                  <Text color="var(--header-text-color)" fontSize="12px" cursor="pointer">{center?.address?.street}, {center?.address?.city}</Text>
+                  <Text color="var(--header-text-color)" fontSize="12px" cursor="pointer">{center?.address?.postalCode}, {center?.address?.region}</Text>
                 </FlexBox>
               </FlexBox>
-              <Badge>{transformFirstLetter(center.category)}</Badge>
+              <Badge>{center.category}</Badge>
+              {/* <Badge>{transformFirstLetter(center.category)}</Badge> */}
             </Card>
           ))
           }

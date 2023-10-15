@@ -1,7 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.tsx';
+import './index.css';
+import 'fonts/font-styles.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import CssBaseline from '@mui/material/CssBaseline';
 

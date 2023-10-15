@@ -11,9 +11,9 @@ interface ITextProps{
     hoverColor?:string;
     cursor?:string;
 }
-export const Text = styled.span<ITextProps>`
+const Text = styled.span<ITextProps>`
   display: block;
-  font-family: ${({fontFamily}) => fontFamily ? fontFamily : 'Roboto'};
+  font-family: ${({fontFamily}) => fontFamily ? fontFamily : 'Manrope'};
   width: ${({width}) => width ? width : ""}; 
   color: ${({color}) => color ? color : "var(--main-text-color)"}; 
   font-size: ${({fontSize}) => fontSize ? fontSize : "14px"};
@@ -28,4 +28,4 @@ export const Text = styled.span<ITextProps>`
     cursor: ${({cursor}) => cursor ? cursor : "default"};
   }
 `
-export default Text
+export default Text;

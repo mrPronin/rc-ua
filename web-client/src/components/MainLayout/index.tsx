@@ -48,7 +48,7 @@ const MainLayout = observer(({ children }: IMainLayout) => {
                     <NavLinkLogo to="/"><img src={Logo} alt="Logo" /></NavLinkLogo>
                     <LangSelect style={{ height: '35px' }} />
                 </FlexBox>
-                <FlexBox direction="column" padding="16px 8px 8px 8px" scrollY="auto">
+                <FlexBox direction="column" padding="16px 8px 8px 8px" height="100vh" scrollY="auto">
                     {children}
                 </FlexBox>
                 <BottomNavigation

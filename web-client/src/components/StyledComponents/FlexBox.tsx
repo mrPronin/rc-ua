@@ -15,7 +15,6 @@ interface IFlexBoxProps {
   flex?: string;
   deskWidth?: string;
 }
-  // flex-shrink: 0;
 
 const FlexBox = styled.div<IFlexBoxProps>`
   display: flex;
@@ -25,7 +24,7 @@ const FlexBox = styled.div<IFlexBoxProps>`
   align-items: ${({align}) => align ? align : null};
   width: ${({width}) => width ? width : "100%"};
   max-width: ${({maxWidth}) => maxWidth ? maxWidth : ""};
-  height: ${({height}) => height ? height : "100hv"};
+  height: ${({height}) => height ? height : ""};
   margin: ${({margin}) => margin ? margin : ""};
   padding: ${({padding}) => padding ? padding : ""};
   background-color: ${({backgroundColor}) => backgroundColor ? backgroundColor : ""};

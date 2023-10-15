@@ -9,6 +9,7 @@ export const Link = styled.a<ILinkProps>`
   display: flex;
   align-items: center;
   color: inherit;
+  font-family: 'Manrope';
 
   &:hover {
     color: ${({ hoverColor }) => hoverColor ? hoverColor : ""};
