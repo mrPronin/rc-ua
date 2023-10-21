@@ -16,7 +16,7 @@ interface IMainLayout {
 }
 
 const MainLayout = observer(({ children }: IMainLayout) => {
-    const { isMobile } = settings;
+    const { isMobile, language } = settings;
     const { pathname } = useLocation();
     useEffect(() => {
         if (window) {
@@ -49,12 +49,12 @@ const MainLayout = observer(({ children }: IMainLayout) => {
                         {children}
                     </FlexBox>
                     <BottomNavigation
-                        sx={{ boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)' }}>
-                        <FlexBox justify="space-between">
+                        sx={{ boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',padding:'16px 0px' }}>
+                        <FlexBox justify="space-between" align="center">
                             {appRoutesMap.map((route) => (
-                                <NavLink to={route.to} key={route.name}>
+                                <NavLink to={route.to} key={route.to}>
                                     <BottomNavigationAction
-                                        label={route.name}
+                                        // label={route.name}
                                         icon={route.icon}
                                         sx={{
                                             color: pathname === route.to ? 'var(--main-red-color)' : 'var(--main-text-color)',
@@ -70,7 +70,7 @@ const MainLayout = observer(({ children }: IMainLayout) => {
                     <AppBar component="nav" style={{ backgroundColor: 'var(--white-color)' }}>
                         <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <NavLinkLogo to="/"><img src={Logo} alt="Logo" style={{ marginTop: '12px' }} /></NavLinkLogo>
-                            <FlexBox justify="space-between" width="360px">
+                            <FlexBox justify="space-between" width={language==='en' ? "360px" : "600px"}>
                                 {appRoutesMap.map((route) => (
                                     <NavLink key={route.to} to={route.to} className={pathname === route.to ? "active" : ""}>
                                         <span>{route.name}</span>

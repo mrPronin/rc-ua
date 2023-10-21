@@ -4,6 +4,7 @@ interface IFlexBoxProps {
   direction?: string;
   align?: string;
   width?: string;
+  minWidth?: string;
   maxWidth?: string;
   height?: string;
   margin?: string;
@@ -23,6 +24,7 @@ const FlexBox = styled.div<IFlexBoxProps>`
   flex-direction: ${({direction}) => direction ? direction : null};
   align-items: ${({align}) => align ? align : null};
   width: ${({width}) => width ? width : "100%"};
+  min-width: ${({minWidth}) => minWidth ? minWidth : ""};
   max-width: ${({maxWidth}) => maxWidth ? maxWidth : ""};
   height: ${({height}) => height ? height : ""};
   margin: ${({margin}) => margin ? margin : ""};

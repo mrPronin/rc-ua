@@ -14,7 +14,8 @@ export default defineConfig({
       'assets': '/src/assets',
       'store': '/src/store',
       'helpers': '/src/helpers',
-      'fonts': '/src/fonts'
+      'fonts': '/src/fonts',
+      'intl': '/src/intl'
     },
   },
   plugins: [
