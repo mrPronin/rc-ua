@@ -15,6 +15,7 @@ import Link from 'components/StyledComponents/Link';
 import { CopyIcon } from 'components/Icons';
 import { Wrapper as GoogleMapWrapper, Status } from "@googlemaps/react-wrapper";
 import GoogleMap from './GoogleMap';
+import { FormattedMessage } from 'react-intl';
 
 interface ICopied {
     address: boolean;
@@ -70,7 +71,7 @@ const CenterDetails: React.FC = () => {
     const render = (status: Status) => {
         switch (status) {
             case Status.LOADING:
-                return <Spinner/>;
+                return <Spinner />;
             case Status.FAILURE:
                 return <div>Error</div>;
             case Status.SUCCESS:
@@ -86,10 +87,10 @@ const CenterDetails: React.FC = () => {
                         hoverColor="var(--grey-hover)"
                         cursor="pointer"
                         onClick={() => navigate('/')}>
-                        Home
+                        <FormattedMessage id="home" />
                     </Text>
                     <Text color="var(--violet-color)">
-                        Blood center
+                        <FormattedMessage id="bloodCenter" />
                     </Text>
                 </Breadcrumbs>
             </FlexBox>
@@ -111,10 +112,12 @@ const CenterDetails: React.FC = () => {
                 </FlexBox>
 
                 <GoogleMapWrapper apiKey={import.meta.env.VITE_GOOGLE_MAP_KEY} render={render} />
-                
+
                 <FlexBox direction="column" margin="16px 0 0 0">
                     <FlexBox justify="space-between" align="center">
-                        <Text margin="16px 0" fontWeight="500">Work hours</Text>
+                        <Text margin="16px 0" fontWeight="500">
+                            <FormattedMessage id="workHours" />
+                        </Text>
                         {centerObj?.category && <Badge>{centerObj?.category}</Badge>}
                     </FlexBox>
                     {centerObj?.workSchedule?.map((item, index) =>
@@ -165,7 +168,9 @@ const CenterDetails: React.FC = () => {
                         </Link>
                     </FlexBox>}
                     {centerObj?.notes && <FlexBox margin="4px 0">
-                        <Text fontWeight="500">Info: {centerObj?.notes}</Text>
+                        <Text fontWeight="500">
+                            <FormattedMessage id="info" />: {centerObj?.notes}
+                        </Text>
                     </FlexBox>}
                 </FlexBox>
             </Card >

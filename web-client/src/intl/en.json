@@ -1,5 +1,10 @@
 {
     "bloodCenters": "Blood centers",
     "news": "News",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "bloodCentersHeader": "Blood center nearby",
+    "home":"Home",
+    "bloodCenter": "Blood center",
+    "workHours":"Work hours",
+    "info":"Info"
   }

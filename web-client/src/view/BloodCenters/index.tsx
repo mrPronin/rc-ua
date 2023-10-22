@@ -29,6 +29,7 @@ import settings from 'store/settings';
 import { bloodCentersData } from 'assets/data';
 import { CardContainer, Card, LocationIcon, Badge } from './styled';
 import bloodCentersStore from 'store/bloodCenters';
+import { FormattedMessage } from 'react-intl';
 
 const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
   function Transition(props, ref) {
@@ -145,8 +146,8 @@ const BloodCenters: React.FC = observer(() => {
             <FilterListIcon style={{ color: '#ff5050', fontSize: '32px' }} />
           </Button>}
         </Box>
-        <Text fontSize='24px' fontWeight='600'>Blood center nearby</Text>
-        <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text>
+        <Text fontSize='24px' fontWeight='600'><FormattedMessage id="bloodCentersHeader"/></Text>
+        {/* <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text> */}
         <CardContainer>
           {bloodCenters.map((center: IBloodDonationCenter) => (
             <Card key={center.id} onClick={()=>navigate(`center/${center.id}`)} cursor="pointer">
