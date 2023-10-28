@@ -1,13 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
-import { observer } from 'mobx-react-lite';
 import MainLayout from 'components/MainLayout';
 import AppRoutes from 'routes/index';
 import {IntlProvider} from 'react-intl';
 import messages from 'intl/index';
-import settings from 'store/settings';
+import  {useSettingsStore}  from 'store/useSettings';
 
-const App = observer(() => {
-const {language} = settings;
+const App = () => {
+const {language} = useSettingsStore();
 const localeMessage: Record<string, string> = messages[language as keyof typeof messages];
 
   return (
@@ -19,5 +18,5 @@ const localeMessage: Record<string, string> = messages[language as keyof typeof 
       </IntlProvider>
     </BrowserRouter>
   );
-});
+};
 export default App;

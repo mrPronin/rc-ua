@@ -1,17 +1,16 @@
-import { useState, CSSProperties } from 'react';
-import { observer } from 'mobx-react-lite';
+import { CSSProperties } from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import Box from '@mui/material/Box';
-import settings from 'store/settings';
+import {useSettingsStore}  from 'store/useSettings'
 
 interface LangSelectProps {
     style: CSSProperties;
   }
-const LangSelect: React.FC<LangSelectProps> = observer(({ style }) =>{
-    const {language, isMobile}=settings;
+const LangSelect: React.FC<LangSelectProps> = ({ style }) =>{
+    const { isMobile, language, setLanguage } = useSettingsStore();
 
     return(
         <Box sx={{width: isMobile ? '100px' : '140px', height: '40px'}}>
@@ -24,8 +23,7 @@ const LangSelect: React.FC<LangSelectProps> = observer(({ style }) =>{
                 value={language}
                 label="Language"
                 onChange={(event: SelectChangeEvent) => {
-                    // setLang(event.target.value as string);
-                    settings.setLanguage(event.target.value as string)
+                    setLanguage(event.target.value as string)
                 }}
             >
                 <MenuItem value="ua">UA</MenuItem>
@@ -34,6 +32,6 @@ const LangSelect: React.FC<LangSelectProps> = observer(({ style }) =>{
         </FormControl>
     </Box>
     )
-});
+};
 
 export default LangSelect;

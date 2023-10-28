@@ -24,11 +24,10 @@ import DialogContent from '@mui/material/DialogContent';
 // import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide, { SlideProps } from '@mui/material/Slide';
-import { observer } from 'mobx-react-lite';
-import settings from 'store/settings';
 import { bloodCentersData } from 'assets/data';
 import { CardContainer, Card, LocationIcon, Badge } from './styled';
-import bloodCentersStore from 'store/bloodCenters';
+import  {useBloodCentersStore}  from 'store/useBloodCenters';
+import  {useSettingsStore}  from 'store/useSettings';
 import { FormattedMessage } from 'react-intl';
 
 const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
@@ -53,10 +52,12 @@ const CustomDialog = styled(Dialog)(() => ({
     backgroundColor: 'rgba(255, 255, 255, 0)'
   },
 }));
-const BloodCenters: React.FC = observer(() => {
-  const { isMobile } = settings;
+
+const BloodCenters: React.FC = () => {
+  const { isMobile } = useSettingsStore();
+  const { setBloodCentersStore } = useBloodCentersStore();
   const { data } = bloodCentersData;
-  console.log(data, 'static data')
+  // console.log(data, 'static data')
   const navigate = useNavigate();
   // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
@@ -78,9 +79,9 @@ const BloodCenters: React.FC = observer(() => {
       return { ...node };
     });
     setBloodCenters(newBloodDonationCenters);
-    bloodCentersStore.setBloodCenters(newBloodDonationCenters);
+    setBloodCentersStore(newBloodDonationCenters);
   }
-  console.log(bloodCenters, 'edges-bloodCenters')
+  // console.log(bloodCenters, 'edges-bloodCenters')
 
   // const loadNext = async () => {
   //   if (!pageInfo?.hasNextPage) return;
@@ -234,6 +235,6 @@ const BloodCenters: React.FC = observer(() => {
       </CustomDialog>
     </>
   );
-});
+};
 
 export default BloodCenters;

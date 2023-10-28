@@ -7,21 +7,20 @@ import { appRoutesMap } from 'routes/appRoutesMap';
 import { useLocation } from 'react-router-dom';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import Logo from 'assets/Logo.png';
-import { observer } from 'mobx-react-lite';
-import settings from 'store/settings';
+import  { useSettingsStore } from 'store/useSettings';
 import LangSelect from 'components/LanguageSelect';
 
 interface IMainLayout {
     children: ReactNode;
 }
 
-const MainLayout = observer(({ children }: IMainLayout) => {
-    const { isMobile, language } = settings;
+const MainLayout = ({ children }: IMainLayout) => {
+    const { isMobile, setIsMobile, language } = useSettingsStore();
     const { pathname } = useLocation();
     useEffect(() => {
         if (window) {
             const checkIsMobile = () => {
-                settings.setIsMobile(window.innerWidth <= 600)
+                setIsMobile(window.innerWidth <= 600)
                 console.log(window.innerWidth <= 600, 'checkIsMobile')
             };
 
@@ -54,7 +53,6 @@ const MainLayout = observer(({ children }: IMainLayout) => {
                             {appRoutesMap.map((route) => (
                                 <NavLink to={route.to} key={route.to}>
                                     <BottomNavigationAction
-                                        // label={route.name}
                                         icon={route.icon}
                                         sx={{
                                             color: pathname === route.to ? 'var(--main-red-color)' : 'var(--main-text-color)',
@@ -90,6 +88,6 @@ const MainLayout = observer(({ children }: IMainLayout) => {
                 </>
             )}
         </FlexBox >)
-});
+};
 
 export default MainLayout;

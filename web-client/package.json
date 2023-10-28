@@ -18,14 +18,13 @@
     "@mui/material": "^5.13.5",
     "@mui/styled-engine-sc": "^5.12.0",
     "graphql": "^15.8.0",
-    "mobx": "^6.10.2",
-    "mobx-react-lite": "^4.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.5.0",
     "react-router-dom": "^6.12.1",
     "styled-components": "^5.3.11",
-    "vite-plugin-pwa": "^0.16.4"
+    "vite-plugin-pwa": "^0.16.4",
+    "zustand": "^4.4.4"
   },
   "devDependencies": {
     "@types/google.maps": "^3.54.3",
