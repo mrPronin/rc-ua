@@ -1,0 +1,12 @@
+/* fonts downloaded from https://webfonts.pro/ */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Manrope/Manrope-Regular.eot');
+    src: local('Manrope Regular'), local('Manrope-Regular'),
+        url('./Manrope/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./Manrope/Manrope-Regular.woff2') format('woff2'), /* Додано підтримку WOFF2 */
+        url('./Manrope/Manrope-Regular.woff') format('woff'),
+        url('./Manrope/Manrope-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

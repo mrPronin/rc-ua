@@ -8,7 +8,13 @@ export default defineConfig({
     alias: {
       'components': '/src/components',
       'routes': '/src/routes',
-      'view': '/src/view'
+      'view': '/src/view',
+      'API': '/src/API',
+      'interfaces': '/src/interfaces',
+      'assets': '/src/assets',
+      'store': '/src/store',
+      'helpers': '/src/helpers',
+      'fonts': '/src/fonts'
     },
   },
   plugins: [
@@ -34,5 +40,5 @@ export default defineConfig({
           },
         ],
       },
-    }),],
+    }),]
 })
