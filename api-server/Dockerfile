@@ -6,15 +6,6 @@ FROM python:3.11.7-slim-bullseye
 RUN apt-get update && \
     apt-get upgrade --yes
 
-# install poetry with pip as root
-# ENV POETRY_HOME=/opt/poetry
-# ENV POETRY_VERSION=1.7.1
-# RUN python3 -m venv $POETRY_HOME \
-#     && $POETRY_HOME/bin/pip install poetry==$POETRY_VERSION
-
-# Extend the PATH variable to include the Poetry installation
-# ENV PATH="$POETRY_HOME/bin:$PATH"
-
 # switch to a regular user without administrative privileges
 RUN useradd --create-home app
 USER app
@@ -37,11 +28,6 @@ ENV POETRY_NO_INTERACTION=1 \
     POETRY_VIRTUALENVS_CREATE=1 \
     POETRY_CACHE_DIR=/home/app/.cache/pypoetry
 
-# setting up a dedicated virtual environment for project
-# ENV VIRTUALENV=/home/app/venv
-# RUN python3 -m venv $VIRTUALENV
-# ENV PATH="$VIRTUALENV/bin:$PATH"
-
 # copy project metadata
 COPY --chown=app pyproject.toml poetry.lock ./
 
@@ -51,4 +37,14 @@ RUN poetry install --no-cache --no-root && rm -rf $POETRY_CACHE_DIR
 # copy source code
 COPY --chown=app src/ src/
 
-CMD ["poetry", "run", "uvicorn", "api.app:app"]
+# Set the working directory to /home/app/src
+WORKDIR /home/app/src
+
+# Set environment variables for host and port
+ENV HOST=0.0.0.0
+ENV PORT=8000
+
+EXPOSE $PORT
+
+# Set the command to run the Uvicorn server
+CMD poetry run uvicorn api.app:app --host $HOST --port $PORT
