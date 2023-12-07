@@ -2,9 +2,9 @@
 
 The main application server for servicing requests from the User web-app
 
-## HOW TO RUN
+## HOW TO RUN DEV
 
-### BUILD DEV DOCKER IMAGE
+### BUILD DOCKER IMAGE
 
 From `api-server` folder run next command
 
@@ -14,13 +14,18 @@ docker build \
 	.
 ```
 
-### RUN DEV DOCKER IMAGE
+### RUN DOCKER IMAGE
 
 ```bash
 docker run \
 	-it \
-	-e HOST="0.0.0.0" \
 	-e PORT="8000" \
 	-p 8000:8000 \
 	rc-api-server-dev
+```
+
+### ACCESS API
+
+```
+http://localhost:8000/graphql
 ```

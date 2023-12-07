@@ -41,10 +41,9 @@ COPY --chown=app src/ src/
 WORKDIR /home/app/src
 
 # Set environment variables for host and port
-ENV HOST=0.0.0.0
 ENV PORT=8000
 
 EXPOSE $PORT
 
 # Set the command to run the Uvicorn server
-CMD poetry run uvicorn api.app:app --host $HOST --port $PORT
+CMD poetry run uvicorn api.app:app --host "0.0.0.0" --port $PORT
