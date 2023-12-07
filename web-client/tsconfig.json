@@ -5,6 +5,12 @@
       "components/*": ["src/components/*"],
       "routes/*": ["src/routes/*"],
       "view/*": ["src/view/*"],
+      "API/*": ["src/API/*"],
+      "interfaces/*": ["src/interfaces/*"],
+      "assets/*": ["src/assets/*"],
+      "store/*": ["src/store/*"],
+      "helpers/*": ["src/helpers/*"],
+      "fonts/*": ["src/fonts/*"]
     },
     "target": "ES2020",
     "useDefineForClassFields": true,

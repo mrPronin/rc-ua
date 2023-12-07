@@ -3,17 +3,14 @@ import { NavLink as NavLinkElement } from 'react-router-dom';
 
 const NavLinkLogo = styled(NavLinkElement)`
   text-decoration: none;
-  color: ${({ color }) => color ? color : '#ffffff'};
   font-size: 20px;
-
-  &:hover{
-    color: #CDE1E8;
-  }
 `
 const NavLink = styled(NavLinkLogo)`
+  font-family: 'Manrope';
   font-size: 16px;
+  color: var(--header-text-color);
   &.active{
-    color: #16F2E7;
+    color: var(--main-red-color);
   }
 `
 export {
