@@ -8,7 +8,7 @@ Red-Cross blood donation platform for Ukraine
 
 - **Admin user, Red cross user, Anonymous user** - please check [user roles](docs/002-user-roles.md) section for detailed description;
 - **CapRover platform** - platform to deploy and manage staging environment, please check [environment](docs/005-environment.md) section for detailed description;
-- **Strapi CMS instance** - headless content management system that includes a back-end instance (Strapi back-end) with a GraphQL interface and a Strapi dashboard web-app as a User Interface for creating the content structure and the content itself.
+- **[Strapi CMS](strapi/README.md)** - headless content management system that includes a back-end instance (Strapi back-end) with a GraphQL interface and a Strapi dashboard web-app as a User Interface for creating the content structure and the content itself.
 - **User web-app** - the main user interface of the project for the end user. Using this interface, the end user has access to a list of blood donation centers, news, and background information.
 - **[API Server](api-server/README.md)** - the main application server for servicing requests from the User web-app.
 - **DB PostgreSQL** - database for storing content - blood donation centers, news and additional reference information.
@@ -36,7 +36,3 @@ Red-Cross blood donation platform for Ukraine
 - [API SERVER](api-server/README.md)
 - [TODO](docs/007-todo.md)
 - [TIME-SHEET RULES](docs/008-time-sheet-rules.md)
-
-## QUESTIONS
-
-TODO
