@@ -6,12 +6,13 @@ The main application server for servicing requests from the User web-app
 
 ### BUILD DOCKER IMAGE
 
-From `api-server` folder run next command
+From project root folder run next command
 
 ```bash
 docker build \
 	-t rc-api-server-dev \
-	.
+	-f ./api-server/Dockerfile \
+	./api-server
 ```
 
 ### RUN DOCKER IMAGE
