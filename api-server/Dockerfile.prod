@@ -29,13 +29,13 @@ WORKDIR /home/app
 #     POETRY_CACHE_DIR=/home/app/.cache/pypoetry
 
 # copy project metadata
-COPY --chown=app pyproject.toml poetry.lock ./
+# COPY --chown=app pyproject.toml poetry.lock ./
 
 # install project dependencies without caching
 # RUN poetry install --no-cache --no-root && rm -rf $POETRY_CACHE_DIR
 
 # copy source code
-# COPY --chown=app src/ src/
+COPY --chown=app src/ src/
 
 # Set the working directory to /home/app/src
 # WORKDIR /home/app/src
