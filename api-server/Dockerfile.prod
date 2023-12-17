@@ -32,7 +32,7 @@ ENV POETRY_NO_INTERACTION=1 \
 COPY --chown=app ./api-server/pyproject.toml ./api-server/poetry.lock ./
 
 # install project dependencies without caching
-RUN poetry install --no-cache --no-root && rm -rf $POETRY_CACHE_DIR
+RUN poetry install --without dev --no-cache --no-root && rm -rf $POETRY_CACHE_DIR
 
 # copy source code
 COPY --chown=app ./api-server/src/ src/
