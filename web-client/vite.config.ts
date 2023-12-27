@@ -15,7 +15,8 @@ export default defineConfig({
       'store': '/src/store',
       'helpers': '/src/helpers',
       'fonts': '/src/fonts',
-      'intl': '/src/intl'
+      'intl': '/src/intl',
+      'hooks': '/src/hooks'
     },
   },
   plugins: [
