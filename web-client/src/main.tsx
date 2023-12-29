@@ -5,9 +5,10 @@ import './index.css';
 import 'fonts/font-styles.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import CssBaseline from '@mui/material/CssBaseline';
-
+console.log(import.meta.env.VITE_API_BASE_URL, 'import.meta.env.VITE_APP_BASE_URL')
 const client = new ApolloClient({
-  uri: 'https://rc-api-server.captain.regionit.de/graphql',
+  uri: import.meta.env.VITE_API_BASE_URL,
+  // uri:'https://rc-api-server.captain.regionit.de/graphql',
   cache: new InMemoryCache(),
   defaultOptions: {
     watchQuery: {
