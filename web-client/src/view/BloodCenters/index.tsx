@@ -6,9 +6,10 @@ import Button from 'components/Button';
 import Box from '@mui/material/Box';
 import FlexBox from 'components/StyledComponents/FlexBox';
 import Text from 'components/StyledComponents/Text';
-// import { useQuery } from '@apollo/client';
-// import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
-// import CircularProgress from '@mui/material/CircularProgress';
+import { useQuery } from '@apollo/client';
+import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
+import CircularProgress from '@mui/material/CircularProgress';
+// import { bloodCentersData } from 'assets/data';
 import SearchInput from 'components/SearchInput';
 // import IconButton from '@mui/material/IconButton';
 // import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -24,7 +25,6 @@ import DialogContent from '@mui/material/DialogContent';
 // import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide, { SlideProps } from '@mui/material/Slide';
-import { bloodCentersData } from 'assets/data';
 import { CardContainer, Card, LocationIcon, Badge } from './styled';
 import  {useBloodCentersStore}  from 'store/useBloodCenters';
 // import  {useSettingsStore}  from 'store/useSettings';
@@ -59,20 +59,21 @@ const BloodCenters: React.FC = () => {
   const isMobile = useWindowSize();
   const [show, handleOpen, handleClose] = useModal();
   const { setBloodCentersStore } = useBloodCentersStore();
-  const { data } = bloodCentersData;
-  // console.log(data, 'static data')
+  // const { data: mockData } = bloodCentersData;
   const navigate = useNavigate();
-  // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
+  const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
+  console.log(data, 'static data')
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
   // const [pageInfo, setPageInfo] = useState<IPageInfo>();
   const [bloodCenters, setBloodCenters] = useState<IBloodDonationCenter[]>([]);
   // const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
+  console.log(data, 'вdata-mock data')
     if (data) {
       initData(data);
     }
-  }, []);
+  }, [data]);
 
   const initData = (data: IBloodDonationCenterConnection) => {
     // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
@@ -127,11 +128,11 @@ const BloodCenters: React.FC = () => {
   //   }
   // };
 
-  // if (loading) return (<FlexBox margin="25px 0" justify="center">
-  //   <CircularProgress />
-  // </FlexBox>);
+  if (loading) return (<FlexBox margin="25px 0" justify="center">
+    <CircularProgress />
+  </FlexBox>);
 
-  // if (error) return <p>Error : {error.message}</p>;
+  if (error) return <p>Error : {error.message}</p>;
 
   return (
     <>
