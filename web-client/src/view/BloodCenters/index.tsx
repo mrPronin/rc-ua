@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { useQuery } from '@apollo/client';
-// import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
 import { IBloodDonationCenterConnection, /*IPageInfo,*/ IBloodDonationCenterEdge, IBloodDonationCenter } from 'interfaces/bloodDonationCenters';
 // import Pagination from '@mui/material/Pagination';
 import Button from 'components/Button';
 import Box from '@mui/material/Box';
 import FlexBox from 'components/StyledComponents/FlexBox';
 import Text from 'components/StyledComponents/Text';
+// import { useQuery } from '@apollo/client';
+// import { GET_BLOOD_CENTERS } from 'API/bloodDonationCenters';
 // import CircularProgress from '@mui/material/CircularProgress';
 import SearchInput from 'components/SearchInput';
 // import IconButton from '@mui/material/IconButton';
@@ -24,11 +24,13 @@ import DialogContent from '@mui/material/DialogContent';
 // import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide, { SlideProps } from '@mui/material/Slide';
-import { observer } from 'mobx-react-lite';
-import settings from 'store/settings';
 import { bloodCentersData } from 'assets/data';
 import { CardContainer, Card, LocationIcon, Badge } from './styled';
-import bloodCentersStore from 'store/bloodCenters';
+import  {useBloodCentersStore}  from 'store/useBloodCenters';
+// import  {useSettingsStore}  from 'store/useSettings';
+import { FormattedMessage } from 'react-intl';
+import useWindowSize from 'hooks/useMobileSize';
+import useModal from 'hooks/useModal';
 
 const Transition = React.forwardRef<HTMLDivElement, SlideProps>(
   function Transition(props, ref) {
@@ -52,10 +54,13 @@ const CustomDialog = styled(Dialog)(() => ({
     backgroundColor: 'rgba(255, 255, 255, 0)'
   },
 }));
-const BloodCenters: React.FC = observer(() => {
-  const { isMobile } = settings;
+
+const BloodCenters: React.FC = () => {
+  const isMobile = useWindowSize();
+  const [show, handleOpen, handleClose] = useModal();
+  const { setBloodCentersStore } = useBloodCentersStore();
   const { data } = bloodCentersData;
-  console.log(data, 'static data')
+  // console.log(data, 'static data')
   const navigate = useNavigate();
   // const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
@@ -77,9 +82,9 @@ const BloodCenters: React.FC = observer(() => {
       return { ...node };
     });
     setBloodCenters(newBloodDonationCenters);
-    bloodCentersStore.setBloodCenters(newBloodDonationCenters);
+    setBloodCentersStore(newBloodDonationCenters);
   }
-  console.log(bloodCenters, 'edges-bloodCenters')
+  // console.log(bloodCenters, 'edges-bloodCenters')
 
   // const loadNext = async () => {
   //   if (!pageInfo?.hasNextPage) return;
@@ -127,15 +132,7 @@ const BloodCenters: React.FC = observer(() => {
   // </FlexBox>);
 
   // if (error) return <p>Error : {error.message}</p>;
-  const [open, setOpen] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   return (
     <>
       <FlexBox direction="column" deskWidth="600px">
@@ -145,8 +142,8 @@ const BloodCenters: React.FC = observer(() => {
             <FilterListIcon style={{ color: '#ff5050', fontSize: '32px' }} />
           </Button>}
         </Box>
-        <Text fontSize='24px' fontWeight='600'>Blood center nearby</Text>
-        <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text>
+        <Text fontSize='24px' fontWeight='600'><FormattedMessage id="bloodCentersHeader"/></Text>
+        {/* <Text color="#57575b" fontSize="16px">Since your geolocation is enabled, the nearest blood centers are shown.</Text> */}
         <CardContainer>
           {bloodCenters.map((center: IBloodDonationCenter) => (
             <Card key={center.id} onClick={()=>navigate(`center/${center.id}`)} cursor="pointer">
@@ -201,7 +198,7 @@ const BloodCenters: React.FC = observer(() => {
         }}
       > */}
       <CustomDialog
-        open={open}
+        open={show}
         TransitionComponent={Transition}
         keepMounted
         onClose={handleClose}
@@ -233,6 +230,6 @@ const BloodCenters: React.FC = observer(() => {
       </CustomDialog>
     </>
   );
-});
+};
 
 export default BloodCenters;

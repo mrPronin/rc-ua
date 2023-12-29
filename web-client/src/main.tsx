@@ -7,8 +7,23 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import CssBaseline from '@mui/material/CssBaseline';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:8000/graphql',
+  uri: 'https://rc-api-server.captain.regionit.de/graphql',
   cache: new InMemoryCache(),
+  defaultOptions: {
+    watchQuery: {
+      fetchPolicy: 'no-cache',
+    },
+    query: {
+      fetchPolicy: 'no-cache',
+    },
+    mutate: {
+      fetchPolicy: 'no-cache',
+    },
+  },
+  headers: {
+    'Access-Control-Allow-Origin': '*', 
+    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept', 
+  }
 });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

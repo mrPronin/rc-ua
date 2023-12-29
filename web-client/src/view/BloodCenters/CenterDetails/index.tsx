@@ -7,7 +7,6 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import FlexBox from 'components/StyledComponents/FlexBox';
 import Spinner from 'components/Spinner';
 import Text from 'components/StyledComponents/Text';
-import bloodCentersStore from 'store/bloodCenters';
 import PhoneIcon from '@mui/icons-material/Phone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import PublicIcon from '@mui/icons-material/Public';
@@ -15,6 +14,9 @@ import Link from 'components/StyledComponents/Link';
 import { CopyIcon } from 'components/Icons';
 import { Wrapper as GoogleMapWrapper, Status } from "@googlemaps/react-wrapper";
 import GoogleMap from './GoogleMap';
+import { useBloodCentersStore } from 'store/useBloodCenters';
+import { useBloodCenterStore} from 'store/useBloodCenter';
+import { FormattedMessage } from 'react-intl';
 
 interface ICopied {
     address: boolean;
@@ -24,8 +26,10 @@ interface ICopied {
 }
 
 const CenterDetails: React.FC = () => {
-    const { bloodCenters, bloodCenter } = bloodCentersStore;
-    console.log(bloodCenter, 'bloodCenter in Detail')
+    const { bloodCenters } = useBloodCentersStore();
+    const { bloodCenter, setBloodCenter } = useBloodCenterStore();
+
+    // console.log(bloodCenter, 'bloodCenter in Detail')
     const { id } = useParams();
     const navigate = useNavigate();
     const [centerObj, setCenterObj] = useState<IBloodDonationCenter | null>();
@@ -41,7 +45,7 @@ const CenterDetails: React.FC = () => {
             const center: IBloodDonationCenter | null = bloodCenters.find(center => center.id === id) || null;
             if (center) {
                 setCenterObj(center);
-                bloodCentersStore.setBloodCenter(center);
+                setBloodCenter(center);
                 setIsLoading(false);
             } else {
                 setCenterObj(bloodCenter);
@@ -70,7 +74,7 @@ const CenterDetails: React.FC = () => {
     const render = (status: Status) => {
         switch (status) {
             case Status.LOADING:
-                return <Spinner/>;
+                return <Spinner />;
             case Status.FAILURE:
                 return <div>Error</div>;
             case Status.SUCCESS:
@@ -86,10 +90,10 @@ const CenterDetails: React.FC = () => {
                         hoverColor="var(--grey-hover)"
                         cursor="pointer"
                         onClick={() => navigate('/')}>
-                        Home
+                        <FormattedMessage id="home" />
                     </Text>
                     <Text color="var(--violet-color)">
-                        Blood center
+                        <FormattedMessage id="bloodCenter" />
                     </Text>
                 </Breadcrumbs>
             </FlexBox>
@@ -111,10 +115,12 @@ const CenterDetails: React.FC = () => {
                 </FlexBox>
 
                 <GoogleMapWrapper apiKey={import.meta.env.VITE_GOOGLE_MAP_KEY} render={render} />
-                
+
                 <FlexBox direction="column" margin="16px 0 0 0">
                     <FlexBox justify="space-between" align="center">
-                        <Text margin="16px 0" fontWeight="500">Work hours</Text>
+                        <Text margin="16px 0" fontWeight="500">
+                            <FormattedMessage id="workHours" />
+                        </Text>
                         {centerObj?.category && <Badge>{centerObj?.category}</Badge>}
                     </FlexBox>
                     {centerObj?.workSchedule?.map((item, index) =>
@@ -165,7 +171,9 @@ const CenterDetails: React.FC = () => {
                         </Link>
                     </FlexBox>}
                     {centerObj?.notes && <FlexBox margin="4px 0">
-                        <Text fontWeight="500">Info: {centerObj?.notes}</Text>
+                        <Text fontWeight="500">
+                            <FormattedMessage id="info" />: {centerObj?.notes}
+                        </Text>
                     </FlexBox>}
                 </FlexBox>
             </Card >
