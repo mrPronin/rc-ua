@@ -7,8 +7,7 @@ graphql_app = GraphQLRouter(schema)
 
 app = FastAPI()
 origins = [
-    # "*",
-    "http://localhost:5173/"
+    "*"
 ]
 app.add_middleware(
     CORSMiddleware,
