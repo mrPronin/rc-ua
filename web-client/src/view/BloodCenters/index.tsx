@@ -59,20 +59,21 @@ const BloodCenters: React.FC = () => {
   const isMobile = useWindowSize();
   const [show, handleOpen, handleClose] = useModal();
   const { setBloodCentersStore } = useBloodCentersStore();
-  // const { data } = bloodCentersData;
-  // console.log(data, 'static data')
+  // const { data: mockData } = bloodCentersData;
   const navigate = useNavigate();
   const { loading, error, data } = useQuery(GET_BLOOD_CENTERS);
+  console.log(data, 'static data')
   // const { loading, error, data, fetchMore } = useQuery(GET_BLOOD_CENTERS, { variables: { first: 5 } });
   // const [pageInfo, setPageInfo] = useState<IPageInfo>();
   const [bloodCenters, setBloodCenters] = useState<IBloodDonationCenter[]>([]);
   // const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
+  console.log(data, 'вdata-mock data')
     if (data) {
       initData(data);
     }
-  }, []);
+  }, [data]);
 
   const initData = (data: IBloodDonationCenterConnection) => {
     // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
