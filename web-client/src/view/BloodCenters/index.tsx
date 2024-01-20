@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   IBloodDonationCenterConnection,
@@ -81,7 +81,7 @@ const BloodCenters: React.FC = () => {
 
   useEffect(() => {
     if (data) {
-      initData(data);
+      setBloodcentersData(data);
     }
   }, [data]);
 
@@ -93,17 +93,17 @@ const BloodCenters: React.FC = () => {
           first: 4,
         },
         updateQuery: (prev, { fetchMoreResult }) => {
-          initData(fetchMoreResult);
+          setBloodcentersData(fetchMoreResult);
         },
       });
     }
   };
 
-  const initData = (data: IBloodDonationCenterConnection) => {
+  const setBloodcentersData = useCallback((data: IBloodDonationCenterConnection) => {
     // setPageInfo({ ...data?.bloodDonationCenters?.pageInfo });
     const { hasNextPage: hasDataNextPage, endCursor: endDataCursor } =
       data?.bloodDonationCenters?.pageInfo;
-    console.log(data, hasDataNextPage, "data in InitData-.hasNextPage");
+    console.log(data, hasDataNextPage, bloodCenters, "data -hasNextPage - bloodCenters - in InitData-.hasNextPage");
     setHasNextPage(hasDataNextPage);
     setEndCursor(endDataCursor);
 
@@ -117,7 +117,7 @@ const BloodCenters: React.FC = () => {
     );
     setBloodCenters([...bloodCenters, ...newBloodDonationCenters]);
     setBloodCentersStore([...bloodCenters, ...newBloodDonationCenters]);
-  };
+  },[data, bloodCenters]);
   // const loadNext = async () => {
   //   if (!pageInfo?.hasNextPage) return;
 
@@ -167,7 +167,7 @@ const BloodCenters: React.FC = () => {
   //   );
 
   if (error) return <p>Error : {error.message}</p>;
-  // console.log(bloodCenters, 'edges-bloodCenters')
+  console.log(bloodCenters, 'edges-bloodCenters')
   return (
     <>
       <FlexBox direction="column" deskWidth="600px">
@@ -192,7 +192,7 @@ const BloodCenters: React.FC = () => {
                 {loading && <CircularProgress />}
               </FlexBox>
             }
-            endMessage={<p>No more items</p>}
+            endMessage={<p>No more centers</p>}
           >
             {bloodCenters.map((center: IBloodDonationCenter) => (
               <Card
