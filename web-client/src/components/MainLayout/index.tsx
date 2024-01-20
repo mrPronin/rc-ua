@@ -44,7 +44,6 @@ const MainLayout = ({ children }: IMainLayout) => {
             direction="column"
             padding="16px 8px 8px 8px"
             flexGrow={1}
-            scrollY="auto"
           >
             {children}
           </FlexBox>
